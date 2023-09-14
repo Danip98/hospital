@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/2c3c09dae5.js" crossorigin="anonymous"></script>
+    <!-- google-fonts fuente Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- google-fonts fuente Playfair Display Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- icono-->
+    <link rel="icon" href="./img/Logo/logo.ico" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style_index.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <!-- Cabecera columna 1 -->
+            <div class="cab_col">
+                <div><!-- LOGO -->
+                    <a href="/"><img src="img/Logo/logo ajustado.png" alt="" /></a>
+                </div>
+                <div><!-- Titulo/Nombre del hospital -->
+                    <a href="/">
+                        <h1>
+                            HOSPITAL ZONAL GENERAL DE AGUDOS <br />
+                            Dr ARTURO OÑATIVA
+                        </h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cab_col">
+                <!-- Cabecera columna 2 -->
+                <div>
+                    <nav><!-- Navegación -->
+                        <a href="index.html">Inicio</a>
+                        <a href="servicios.html">Servicios</a>
+                        <a href="institucional.html">Institucional</a>
+                        <a href="noticias.html">Noticias</a>
+                        <a href="intranet.html">Intranet</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+            <h3>Contáctanos:</h3>
+                <p>Telefono: 1126 5894 5677</p>
+                <p>Email: contacto@email.com</p>
+    </section>
+
+    <section class="formCont">
+        <h2>Formulario de Contacto</h2>
+        <form >
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <!-- Nombre -->
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+
+                <!-- Apellido -->
+                <br>
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" size="10" maxlength="5" required>
+
+                <!-- DNI -->
+                <br>
+                <label for="dni">DNI: </label>
+                <input type="number" name="dni" id="dni">
+
+                <!-- Nro de Trámite -->
+                <br>
+                <label for="nro_tramite">Número de Trámite: </label>
+                <input type="password">
+
+
+                <!-- Hijos -->
+                <br>
+                <label for="hijos">Nro de Hijos (0 a 10): </label>
+                <input type="number" min="0" max="10">
+
+                <!-- Mail -->
+                <br>
+                <label for="mail">Mail: </label>
+                <input type="email">
+
+
+                <!-- Fecha de Nacimiento -->
+                <br>
+                <label for="fecnac">Fecha de Nacimiento: </label>
+                <input type="date" min="2023-01-01">
+
+                <!-- Adjuntar archivos -->
+                <br>
+                <label for="archivo">Adjuntar archivo: </label>
+                <input type="file">
+
+                <!-- Comentarios -->
+                <label for="comentarios">Deje aquí sus comentarios: </label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="40" rows="10"></textarea>
+
+                <br><br>
+                <!-- Botones -->
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar">
+
+
+
+        </form>
+        </fieldset>
+    </section>
+
+    <section class="mapa">
+        <h2>Ubicacion</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6710990.874697449!2d-66.78976069999997!3d-34.7845258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cc104c52ee3%3A0x6e850ceb78e6eba5!2sHospital%20Dr.%20Arturo%20O%C3%B1ativia!5e0!3m2!1ses-419!2sar!4v1694471727748!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+
+    <!-- ***********Inicia el footer*************** -->
+    <footer>
+        <hr />
+        <div class="pie_pag">
+            <div class="pie_pag-col">
+                <!-- Columna 1-->
+
+                <div class="registrarse">
+                    <div>
+                        <h4>Suscribite a nuestra newsletter:</h4>
+                    </div>
+                    <div><input type="text" placeholder="Escribe tu email" /></div>
+                    <div><button type="submit" value="Registrarse">Registrarse</button></div>
+                </div>
+
+
+                <nav>
+                    <a href="contacto.html">
+                        <h4>Contacto</h4>
+                    </a>
+                </nav>
+                <!--<div class="contacto" id="contacto">
+                    <div>
+                        <h4>Contáctanos:</h4>
+                    </div>
+                    <div>
+                        <p>telf: 1126 5894 5677</p>
+                    </div>
+                    <div>
+                        <p>Email: contacto@email.com</p>
+                    </div>
+                </div>-->
+                <!-- Redes sociales -->
+                <div class="redes_group">
+                    <div class="redes_sub">
+                        <h4>Redes sociales</h4>
+                    </div>
+                    <div class="redes_item">
+                        <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA=="><i
+                                class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <!-- Cierra Redes sociales -->
+            </div>
+            <div class="pie_pag-col">
+                <!-- Columna 2-->
+                <div>
+                    <h4>Navegación:</h4>
+                </div>
+                <div>
+
+                </div>
+
+                <nav>
+                    <!-- Navegación -->
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="intranet.html">Intranet</a></li>
+                    </ul>
+                </nav>
+                </span>
+            </div>
+            <div class="pie_pag-col">
+                <!-- Columna 3-->
+                <span>
+                    <a class="irarriba" href="#">
+                        <h4>Ir arriba</h4>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

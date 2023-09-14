@@ -1,0 +1,141 @@
+/*body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+.cabecera{
+    display: flex;
+}
+
+.cab-col1, .cab-col2{  /* 2 columnas en la cabecera: 1-Logo y nombre 2-navegación 
+    width: 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 0%;
+}*/
+
+/* Logo */
+header img {
+    width: 30%;
+    padding-bottom: 0px;
+
+}
+
+/* Titulo Dr */
+header h1 {
+    font-size: x-large;
+}
+
+/* Estilos de Navegación*/
+header nav {
+    padding-top: 8.5em;
+    padding-left: 2.71em;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/******** ESTILOS DEL MAIN *******/
+
+/* Acordeon De servicios */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.contenedor-acordeon h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.acordeon {
+    background: #fff;
+    width: 100%;
+}
+
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    border: 2px solid #03adc6;
+    border-radius: 0px;
+    font-family: "Lucida Console", Monaco, monospace;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 1 0 0 0 #03adc6;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    width: 90%;
+}
+
+.acordeon label:hover {
+    box-shadow: inset 400px 0 0 0 #03adc6;
+}
+
+.acordeon .contenido-acordeon {
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 800ms ease;
+    background: linear-gradient(to right, transparent 0%, transparent 50%, #03adc6 50%, #03adc6 100%);
+    /* Fondo con degradado que se mostrará al abrir el acordeón */
+    background-size: 200% 100%;
+    background-position: right;
+
+}
+
+.boton-acordeon {
+    display: none;
+}
+
+.boton-acordeon:checked~.contenido-acordeon {
+    max-height: 300px;
+    padding: 15px 0px;
+    background-position: left;
+}
+
+
+
+
+
+/* FOOTER 
+footer {
+    background-color: #03adc6;
+}
+
+.pie_pag {
+    display: flex;
+}
+
+.pie_pag-col1,
+.pie_pag-col2,
+.pie_pag-col3 {
+    width: 33.3%;
+    padding: 2em;
+}*/
+
+/* Redes sociales */
+.redessoc-group {
+    display: flex;
+}
+
+.redessoc {
+    width: 50px;
+}

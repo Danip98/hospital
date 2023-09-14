@@ -1,0 +1,23 @@
+
+Fuentes:
+*************************************
+PARA TITULOS Y SUBTITULOS:
+
+https://fonts.google.com/specimen/Playfair+Display
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+font-family: 'Playfair Display', serif;
+
+*************************************
+PARA PÁRRAFOS:
+
+https://fonts.google.com/specimen/Open+Sans
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+font-family: 'Open Sans', sans-serif;

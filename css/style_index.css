@@ -1,0 +1,259 @@
+/* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
+/* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
+.colores {
+    color: #F2F2F2;
+    color: #152C40;
+    color: #06ADBF;
+    color: #0D0D0D;
+    color: #04BFBF;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #152C40;
+    font-size: 14px;
+}
+
+
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2em;
+    padding-top: 2em;
+    /*background-color: #b4b2b2;*/
+}
+
+
+
+/* Logo */
+header img {
+    width: 30%;
+    padding-bottom: 0px;
+    /*background-color: #ffffff; queria que el header se vea de algun color, no solo en blanco*/
+}
+
+/* Titulo Dr */
+header h1 {
+    font-size: large;
+    color: #152c40;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+}
+
+/* Estilos de Navegación*/
+header nav {
+    padding-top: 7.2em;
+    padding-left: 2.71em;
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgba(6, 173, 191, 75%)
+}
+
+/******** ESTILOS DEL MAIN *******/
+/* Imagen debajo del nav, una imagen del hospital */
+.imagehosp {
+    width: 100%;
+}
+
+
+/* estilos SECCION VALORES */
+.valores_sub {
+    text-align: center;
+    color: #152c40;
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
+
+}
+
+.valores_group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    align-items: center;
+}
+
+.valores {
+    width: 50%;
+    align-items: center;
+    margin-left: 3.2em;
+
+}
+
+.valores_group img {
+    width: 100%;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.valores_group img:hover {
+    border: solid 3px #b4b2b2;
+    cursor: pointer;
+}
+
+.valores_group h2 {
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+    color: #152c40;
+    text-align: center;
+    margin-top: 0%;
+    letter-spacing: 1px;
+}
+
+.valores_group h2:hover {
+    color: rgba(6, 173, 191, 75%);
+    cursor: pointer;
+}
+
+/* SECCION INSTITUCIONAL */
+.institucional {
+    display: grid;
+    background-color: rgba(4, 191, 191, 0.1);
+    grid-template-rows: repeat(4, fr);
+    padding-left: 7em;
+    padding-right: 6em;
+    padding-bottom: 6em;
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    border-radius: 20px;
+}
+
+.institucional h2 {
+    font-family: 'Merriweather', serif;
+    font-size: x-large;
+    color: #152c40;
+    text-align: center;
+    margin-top: 4em;
+    letter-spacing: 2px;
+}
+
+.institucional p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    color: #152c40;
+    /* text-align: center; */
+    margin-top: 1em;
+}
+
+/* SECCION NOTICIAS */
+
+.noticias_group {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 7em;
+    padding-right: 6em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    column-gap: 1.5em;
+
+}
+
+.not_sub {
+    grid-column: 1/4;
+    font-family: 'Merriweather', serif;
+    color: #152c40;
+    text-align: center;    
+    letter-spacing: 2px;
+}
+
+.noticia {
+    margin-top: 4em;
+}
+
+.noticias_group h3, p{
+    font-size: small;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.noticia:hover{
+    background-color: rgba(6, 173, 191, 0.1);
+    width: 102%;
+    border-radius: 2%;
+}
+
+.noticias_group img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.noticias_group img:hover{
+    width: 101%;
+}
+
+/***CONTACTO***/
+
+.contacto {
+    margin: 10px;
+    padding: 15px 30px 15px;
+}
+
+.formCont {
+    margin: 10px;
+    padding: 15px 30px 20px;
+    border: #04BFBF;
+    background-color: #d8e8e8;
+}
+
+.mapa {
+    margin: 10px;
+    border: #03adc6;
+    padding: 15px 30px 20px;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #03adc6;
+    font-family: 'Open Sans', sans-serif
+}
+
+.footer p{
+    margin: 0px; 
+}
+.pie_pag{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+
+
+footer ul, footer a{
+    list-style: none;
+    padding-left: 0%;
+}
+footer a:hover{
+    color: #F2F2F2;
+}
+
+/* Redes sociales */
+
+
+
