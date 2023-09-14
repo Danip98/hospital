@@ -1,26 +1,35 @@
-/*body{
-    margin: 0px;
-    padding: 0px;
+/* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
+/* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
+.colores {
+    color: #F2F2F2;
+    color: #152C40;
+    color: #06ADBF;
+    color: #0D0D0D;
+    color: #04BFBF;
 }
 
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
-
-a{
+a {
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #152C40;
+    font-size: 14px;
 }
 
-.cabecera{
-    display: flex;
-}
 
-.cab-col1, .cab-col2{  /* 2 columnas en la cabecera: 1-Logo y nombre 2-navegación 
-    width: 50%;
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 0%;
-}*/
+    padding-top: 2em;
+    /*background-color: #b4b2b2;*/
+}
 
 /* Logo */
 header img {
@@ -115,7 +124,7 @@ nav a {
 
 
 
-/* FOOTER 
+/* FOOTER */
 footer {
     background-color: #03adc6;
 }
@@ -129,7 +138,7 @@ footer {
 .pie_pag-col3 {
     width: 33.3%;
     padding: 2em;
-}*/
+}
 
 /* Redes sociales */
 .redessoc-group {

@@ -49,23 +49,32 @@
                         <a href="institucional.html">Institucional</a>
                         <a href="noticias.html">Noticias</a>
                         <a href="intranet.html">Intranet</a>
+                        <a href="contacto.html">Contacto</a>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- INICIA EL MAIN -->
+    <main>
+        <!-- Imagen debajo del nav -->
+        <div>
+            <img class="imagehosp" src="img/img_index/hospital3.jpg" alt="" />
+        </div>
+    </main>
 
+    <!-- Formulario de contacto -->
     <section class="contacto">
         <h2>Contacto</h2>
-            <h3>Contáctanos:</h3>
-                <p>Telefono: 1126 5894 5677</p>
-                <p>Email: contacto@email.com</p>
+        <h3>Contáctanos:</h3>
+        <p>Telefono: 1126 5894 5677</p>
+        <p>Email: contacto@email.com</p>
     </section>
 
     <section class="formCont">
         <h2>Formulario de Contacto</h2>
-        <form >
+        <form>
             <fieldset>
                 <legend>Datos Personales</legend>
 
@@ -128,7 +137,10 @@
 
     <section class="mapa">
         <h2>Ubicacion</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6710990.874697449!2d-66.78976069999997!3d-34.7845258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cc104c52ee3%3A0x6e850ceb78e6eba5!2sHospital%20Dr.%20Arturo%20O%C3%B1ativia!5e0!3m2!1ses-419!2sar!4v1694471727748!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6710990.874697449!2d-66.78976069999997!3d-34.7845258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cc104c52ee3%3A0x6e850ceb78e6eba5!2sHospital%20Dr.%20Arturo%20O%C3%B1ativia!5e0!3m2!1ses-419!2sar!4v1694471727748!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 
@@ -149,13 +161,7 @@
                     <div><button type="submit" value="Registrarse">Registrarse</button></div>
                 </div>
 
-
-                <nav>
-                    <a href="contacto.html">
-                        <h4>Contacto</h4>
-                    </a>
-                </nav>
-                <!--<div class="contacto" id="contacto">
+                <div class="contacto" id="contacto">
                     <div>
                         <h4>Contáctanos:</h4>
                     </div>
@@ -165,14 +171,14 @@
                     <div>
                         <p>Email: contacto@email.com</p>
                     </div>
-                </div>-->
+                </div>
                 <!-- Redes sociales -->
                 <div class="redes_group">
                     <div class="redes_sub">
                         <h4>Redes sociales</h4>
                     </div>
                     <div class="redes_item">
-                        <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA=="><i
+                        <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA==" target="_blank"><i
                                 class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
@@ -183,32 +189,53 @@
                 <div>
                     <h4>Navegación:</h4>
                 </div>
-                <div>
-
+                <!-- Navegación -->
+                <div class="nav_footer">
+                    <nav>
+                        <ul>
+                            <li><a href="/index.html">Inicio</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="institucional.html">Institucional</a></li>
+                            <li><a href="noticias.html">Noticias</a></li>
+                            <li><a href="intranet.html">Intranet</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <nav>
-                    <!-- Navegación -->
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="institucional.html">Institucional</a></li>
-                        <li><a href="noticias.html">Noticias</a></li>
-                        <li><a href="intranet.html">Intranet</a></li>
-                    </ul>
-                </nav>
-                </span>
             </div>
+            <!-- Columna 3-->
             <div class="pie_pag-col">
-                <!-- Columna 3-->
-                <span>
+                <div>
                     <a class="irarriba" href="#">
                         <h4>Ir arriba</h4>
                     </a>
-                </span>
+                </div>
+                <div>
+                    <h4>Podría interesarte:</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">
+                                <h5>¿Cómo sacar turno?</h5>
+                            </a></li>
+                        <li><a href="">
+                                <h5>Historia del hospital</h5>
+                            </a></li>
+                        <li><a href="">
+                                <h5>Donar sangre</h5>
+                            </a></li>
+                        <li><a href="">
+                                <h5>Ubicación del hospital</h5>
+                            </a></li>
+
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

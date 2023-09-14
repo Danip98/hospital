@@ -224,6 +224,37 @@ nav a:hover {
     padding: 15px 30px 20px;
 }
 
+/* SECCIÓN INFORMATIVA */
+
+.info_group{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    padding-left: 9em;
+    padding-right: 9em;
+    
+}
+
+.info_group  .info_row .info_item h2{
+    text-align: left;
+}
+
+.telef{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: right;
+    column-gap: 5em;    
+}
+
+.info_item{
+    width: 30%;
+    
+}
+
+.info_group img{
+    width: 100%;
+    
+}
+
 
 /* FOOTER */
 footer{
