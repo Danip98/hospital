@@ -1,5 +1,7 @@
+
 /* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
 /* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
+
 .colores {
     color: #F2F2F2;
     color: #152C40;
@@ -8,300 +10,121 @@
     color: #04BFBF;
 }
 
-
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: #152C40;
-    font-size: 14px;
-}
-
-
-.cabecera {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 2em;
-    padding-top: 2em;
-}
-
-
-
-/* Logo */
-header img {
-    width: 30%;
-    padding-bottom: 0px;
+body{
+    background-color: #F2F2F2;
 
 }
 
-/* Titulo Dr */
-h1 {  /* Aca aplicamos estilos a los h1 de todo el proyecto también */
-    font-size: large;
-    color: #152c40;
+h1{
     font-family: 'Merriweather', serif;
-    letter-spacing: 1px;
+    font-size: 1.3em; 
+    color: #06ADBF;
+}
+h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
 }
 
-/* Estilos de Navegación*/
-header nav {
-    padding-top: 7.2em;
-    padding-left: 2.71em;
-}
-
-nav a {
-    padding: 10px;
-}
-
-nav a:hover {
-    color: rgba(6, 173, 191, 75%)
-}
-/* Imagen debajo del nav, una imagen del hospital */
-.imagehosp {
-    width: 100%;
-}
-
-/* Las p del proyecto */
 p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: medium;
-    color: #152c40;
-}
-
-/* Los h2 del proyecto */
-h2{
-    font-family: 'Merriweather', serif;
-    font-size: x-large;
-    color: #152c40;
-    letter-spacing: 2px;
-}
-
-
-/******** ESTILOS DEL MAIN *******/
-
-
-
-/* estilos SECCION VALORES */
-/* .valores_sub {
-    text-align: center;
-    color: #152c40;
-    margin-top: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
-
-} */
-
-.valores_group {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-top: 2em;
-    /* margin-left: 4em; */
-    margin-right: 4em;
-    align-items: center;
-    width: 90%;
-}
-
-.valores {
-    display: grid; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-    margin-left: 3.2em;
-}
-
-.valores_group img {
-    width: 80%;
-    border-radius: 50%;
-    /* align-items: center; */
-    
-}
-
-.valores_group img:hover {
-    border: solid 3px #b4b2b2;
-    cursor: pointer;
-}
-
-.valores_group h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 0.7em;
-    color: #152c40;
-    text-align: center;
-    margin-top: 0%;
-    letter-spacing: 1px;
-}
-
-.valores_group h2:hover {
-    color: rgba(6, 173, 191, 75%);
-    cursor: pointer;
-}
-
-/* SECCION INSTITUCIONAL */
-.institucional {
-    display: grid;
-    background-color: rgba(4, 191, 191, 0.1);
-    grid-template-rows: repeat(4, fr);
-    padding-left: 6em;
-    padding-right: 6em;
-    padding-bottom: 6em;
-    margin-top: 4em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 4em;
-    border-radius: 20px;
-}
-
-.institucional h2 {
-    font-family: 'Merriweather', serif;
-    font-size: x-large;
-    color: #152c40;
-    text-align: center;
-    margin-top: 4em;
-    letter-spacing: 2px;
-}
-
-.institucional p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: medium;
-    color: #152c40;
-    text-align: center;
-    margin-top: 1em;
-}
-
-/* SECCION NOTICIAS */
-
-.noticias_group {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 7em;
-    padding-right: 7em;
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 4em;
-    column-gap: 1.5em;
-
-}
-
-.not_sub {
-    grid-column: 1/4;
-    font-family: 'Merriweather', serif;
-    color: #152c40;
-    text-align: center;    
-    letter-spacing: 2px;
-}
-
-.noticia {
-    margin-top: 4em;
-}
-
-.noticias_group h3, p{
-    font-size: small;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-}
-
-.noticia:hover{
-    background-color: rgba(6, 173, 191, 0.1);
-    width: 102%;
-    border-radius: 2%;
-}
-
-.noticias_group img {
-    width: 100%;
-    border-radius: 2%;
-}
-
-.noticias_group img:hover{
-    width: 101%;
-}
-
-/* SECCIÓN INFORMATIVA */
-
-.info_group{
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    padding-left: 9em;
-    padding-right: 9em;
-    
-}
-
-.info_group  .info_row .info_item h2{
-    text-align: left;
-}
-
-.telef{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: right;
-    column-gap: 5em;    
-}
-
-.info_item{
-    width: 30%;
-    
-}
-
-.info_group img{
-    width: 100%;
-    
-}
-
-
-
-
-
-
-
-
-/* FOOTER */
-footer{
-    background-color: #03adc6;
     font-family: 'Open Sans', sans-serif
 }
-
-.footer p{
-    margin: 0px; 
+a{
+    text-decoration: none;
 }
-.pie_pag{
+/* Estilos del logo */
+.header .logo{
+    width: 18%;
+    
+}
+.logo img{
+    width: 100%;
+}
+
+/* Grid del header-2columnas */
+.header{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* justify-content: space-between; */
-    column-gap: 1.5em;
-    padding-left: 9em;
-    padding-right: 9em;
+    grid-template-columns: repeat(2,1fr);
 }
 
-#contacto p{
-    margin: 0%;
-    padding: 0%;
+.header nav a{
+    padding: 0.2em;    
 }
 
-footer ul, footer a{
-    list-style: none;
-    padding-left: 0%;
-    margin: 0%;
+.header nav{
+    padding-top: 3em;
+    padding-left: 4em;
+}
 
+
+.principal, .principal_2{
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    display: grid;
+    gap:1.6em;
+    grid-template-columns: repeat(5,1fr);
+    background-color: rgb(211, 240, 240);
+}
+.principal .header,
+.img_header,
+.principal_2 .footer,
+.principal_2 .content{
+    grid-column: 1/6;
+}
+.principal{
+    margin-bottom: 0;
+}
+/* Imagen debajo del nav */
+.img_header img{
+    width: 100%;
+    }
+
+/* seccion valores */
+.principal_2 .section_valores{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
     
 }
-footer a:hover{
-    color: #F2F2F2;
-}
-footer .irarriba h4{
-    padding-top: 0.3em;
-    margin-bottom: 1.9em;
-    
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+
+    .header .enc_col{
+        align-items: center;
+    }
+
+    .header nav{
+        padding-top: 1em;
+        padding-left: 0;
+    }
+
+
+    .img_header img{
+        width: 100%;
+    }
+
+    body{
+        background-color: #0D0D0D;
+    }
+
+
+
 }
 
-/* Redes sociales */
+
+
+
+
 
 
 
