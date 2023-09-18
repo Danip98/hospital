@@ -22,8 +22,8 @@ body{
 
 h1{
     font-family: 'Merriweather', serif;
-    font-size: 1.3em; 
-    color: #06ADBF;
+    font-size: 1em; 
+    color: #F2F2F2;
 }
 h2, h3, h4, h5, h6{
     font-family: 'Merriweather', serif;
@@ -36,16 +36,48 @@ a{
     text-decoration: none;
 }
 /* Estilos del logo */
-.header .logo{
-    width: 18%;
-    
-}
 .logo img{
+    width: 18%;
+    padding-top: 2em;
+}
+
+header .container-fluid{
+    background-color: rgba(21, 44, 64);    
+}
+
+/* separacion superior de los elementos del nav */
+#navbarNav .nav-link{
+    padding-top: 0;
+    color: #F2F2F2;
+}
+header .col-6{
+    padding-top: 2em;
+}
+
+/* estilo del boton responsive */
+.navbar-toggler{
+    margin-left: 6em;
+    background-size: 80%;
+    background-color: aliceblue;
+}
+.navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+}
+/* espacio entre el nav y la imagen del hospital/lo trae bootstrap */
+.navbar{
+    padding-bottom: 0;
+}
+/* estilo imagen debajo del nav */
+.img_header img{
     width: 100%;
 }
 
+
+
+
 /* Grid del header-2columnas */
-.header{
+/* .header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -55,7 +87,7 @@ a{
 }
 
 .header nav{
-    padding-top: 3em;
+    padding-top: 4.8em;
     padding-left: 4em;
 }
 
@@ -67,7 +99,7 @@ a{
     display: grid;
     gap:1.6em;
     grid-template-columns: repeat(5,1fr);
-    background-color: rgb(211, 240, 240);
+    
 }
 .principal .header,
 .img_header,
@@ -77,14 +109,14 @@ a{
 }
 .principal{
     margin-bottom: 0;
-}
+} */
 /* Imagen debajo del nav */
-.img_header img{
+/* .img_header img{
     width: 100%;
-    }
+    } */
 
 /* seccion valores */
-.principal_2 .section_valores{
+/* .principal_2 .section_valores{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     justify-items: center;
@@ -119,7 +151,7 @@ a{
 
 
 
-}
+} */
 
 
 
