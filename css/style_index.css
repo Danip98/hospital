@@ -26,12 +26,20 @@ h1{
     color: #F2F2F2;
     letter-spacing: 1px;
 }
-h2, h3, h4, h5, h6{
+
+h2, h3{
+    font-size: 1.5em;
+    font-family: 'Merriweather', serif;
+}
+
+h4, h5, h6{
+    font-size: 1em;
     font-family: 'Merriweather', serif;
 }
 
 p{
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
 }
 a{
     text-decoration: none;
@@ -80,7 +88,7 @@ header .col-6{
     width: 100%;
 }
 
-/* -----ESTILOS DEL MAIN/contenido --------------*/
+/* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
 
 .contenido{
     max-width: 1000px;
@@ -88,8 +96,7 @@ header .col-6{
     margin: 2em auto;
     display: grid;
     gap:1.6em;
-    grid-template-columns: repeat(5,1fr);
-    
+    grid-template-rows: repeat(5,1fr);    
 }
 
 
@@ -101,7 +108,35 @@ header .col-6{
     
 }
 
+/********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
+footer{
+    background-color: #03adc6;
+}
+footer p{
+    margin: 0px; 
+}
 
+.contacto, .redes_group{
+    margin-top: 2em;
+}
+
+footer ul, footer a{
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+}
+
+.pie_pag{
+    display: grid;
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    gap:1.6em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/* BREAKPOINTS */
 @media screen and (max-width: 768px) {
     header h1{
         margin-bottom: 0;
@@ -111,9 +146,11 @@ header .col-6{
         margin-left: 8em;
     }
 
-    body{
-        background-color: #90cdf3;
+    .pie_pag{
+        
     }
+
+
 
 }
 
@@ -126,10 +163,18 @@ header .col-6{
     .navbar-toggler{
         margin-left: 15em;
     }  
-
-
-
 }
+
+
+/* Pendientes:
+1. ¿Como centrar la lista de navegación del footer, que quede alineadas a la izquierda junto al subtitulo
+navegación?
+2. 
+
+
+
+*/
+
 
 
 
