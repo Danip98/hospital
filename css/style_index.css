@@ -100,13 +100,32 @@ header .col-6{
 }
 
 
-/* seccion valores */
+/******* seccion valores******** */
 .section_valores{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     justify-items: center;
     
 }
+/* contenedor de cada item */
+.val_item{
+    width: 60%;
+}
+/* imagenes de seccion valores */
+.section_valores img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.section_valores h2{
+    font-size: 1em;
+    text-align: center;
+    color: #152C40;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
@@ -167,9 +186,11 @@ footer ul, footer a{
 
 
 /* Pendientes:
-1. ¿Como centrar la lista de navegación del footer, que quede alineadas a la izquierda junto al subtitulo
+1. ¿Como centrar la lista de navegación del footer, que quede alineada a la izquierda junto al subtitulo
 navegación?
-2. 
+2. No funciona el stiky debajo de la imagen del nav hacia abajo PORQUEEEEEEEE - MIERDAAAA?
+3. El responsive del footer lo quiero hacer con grid area, o lo q salga. XD
+4. Armar el main.
 
 
 
