@@ -70,9 +70,9 @@ header .col-6{
     margin-top: 0;
 }
 
-he
+
 /* espacio entre el nav y la imagen del hospital/lo trae bootstrap */
-.navbar{
+#navbar{
     padding-bottom: 0;
 }
 /* estilo imagen debajo del nav */
