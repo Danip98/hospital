@@ -70,9 +70,9 @@ header .col-6{
     margin-top: 0;
 }
 
-he
+
 /* espacio entre el nav y la imagen del hospital/lo trae bootstrap */
-.navbar{
+#navbar{
     padding-bottom: 0;
 }
 /* estilo imagen debajo del nav */
@@ -80,7 +80,7 @@ he
     width: 100%;
 }
 
-/* ESTILOS DEL MAIN/contenido */
+/* -----ESTILOS DEL MAIN/contenido --------------*/
 
 .contenido{
     max-width: 1000px;
@@ -108,7 +108,7 @@ he
         padding-top: 0.3em;        
     }
     header .navbar-toggler{
-        margin-left: 7em;
+        margin-left: 8em;
     }
 
     body{
