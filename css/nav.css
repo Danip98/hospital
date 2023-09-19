@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #F2F2F2;;
     padding: 1rem;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .nav .mobile-menu-button svg {
-    height: 1rem;
-    width: 1rem;
+    height: 3rem;
+    width: 3rem;
     fill: currentColor;
 }
 
@@ -53,7 +53,7 @@
 .nav ul li a {
     font-size: 1rem;
     font-weight: bold;
-    color: #ccc;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -104,14 +104,14 @@
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #ccc;
+    color: black;
     text-decoration: none;
     border-radius: 0.25rem;
     transition: color 0.3s;
 }
 
 .dropdown ul li a:hover {
-    color: #0077ff;
+    color:  #03ADC6;;
 }
 /* Estilos para el botón de cierre del menú desplegable */
 .close-button {
@@ -123,19 +123,19 @@
 .close-button svg {
     height: 1.5rem;
     width: 1.5rem;
-    fill: #ccc;
+    fill: black;
     transition: fill 0.3s;
 }
 
 .close-button svg:hover {
-    fill: #0077ff;
+    fill:  #03ADC6;;
 }
 
 /* Estilos para el fondo del menú desplegable */
 .dropdown-backdrop {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #F2F2F2;
     opacity: 0;
     pointer-events: none;
     z-index: 49;
@@ -147,28 +147,32 @@
     padding-top: 1.5rem;
 }
 
-.logout-button {
-    display: inline-block;
-    background-color: #ff0000;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
 
-.logout-button:hover {
-    background-color: #cc0000;
-}
 
 .copyright-text {
     margin-top: 1rem;
     font-size: 0.75rem;
     text-align: center;
-    color: #ccc;
+    color: black;
 }
 
+.titulo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
+    align-items: center; /* Centra verticalmente el contenido dentro del elemento */
+    text-align: center; /* Centra el texto horizontalmente (opcional) */
+    width: 100%;
+    background-color: #03ADC6;
+}
+
+/* Si tienes un elemento específico dentro de .titulo que deseas centrar horizontalmente, puedes usar la siguiente regla: */
+.titulo .titulo-pag {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    text-decoration: none;
+    color: black;
+}
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
 
@@ -197,5 +201,9 @@
     .dropdown {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
         max-width: none;
+    }
+
+    .titulo .titulo-pag {
+      font-size: 0.6rem;
     }
 }
