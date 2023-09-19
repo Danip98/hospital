@@ -24,6 +24,7 @@ h1{
     font-family: 'Merriweather', serif;
     font-size: 1em; 
     color: #F2F2F2;
+    letter-spacing: 1px;
 }
 h2, h3, h4, h5, h6{
     font-family: 'Merriweather', serif;
@@ -51,12 +52,12 @@ header .container-fluid{
     color: #F2F2F2;
 }
 header .col-6{
-    padding-top: 2em;
+    padding-top: 2.7em;
 }
 
 /* estilo del boton responsive */
 .navbar-toggler{
-    margin-left: 6em;
+    margin-left: 13em;
     background-size: 80%;
     background-color: aliceblue;
 }
