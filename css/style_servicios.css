@@ -191,6 +191,11 @@ body {
     background-color: #03ADC6;
     border-radius: 15px;
     color: white;
+    text-shadow: 0 0 10px #fff8;
+}
+
+.titulo:hover {
+    
 }
 
 .titulo2 {
@@ -209,7 +214,7 @@ body {
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-    
+    text-shadow: 0 0 10px #fff8;
    
 }
 
