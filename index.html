@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- google-fonts fuente Merriweather -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <!-- google-fonts fuente Playfair Display Open Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-        <!-- icono-->
-    <link rel="icon" href="./img/Logo/logo.ico" />
-    <!-- Enlace de bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Mi enlace CSS -->
-    <link rel="stylesheet" href="css/style_index.css" />
-  </head>
-  <body>
-    
-    <header>
-      <div class="container">
-        <div class="logo">
-          <img src="img/Logo/logo ajustado.png" alt="">
-        </div>     
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Arturo Oñativa</title>
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/2c3c09dae5.js" crossorigin="anonymous"></script>
+  <!-- google-fonts fuente Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- google-fonts fuente Playfair Display Open Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- icono-->
+  <link rel="icon" href="./img/Logo/logo.ico" />
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="css/style_servicios.css" />
+</head>
+
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#">
+          <img src="/img/Logo/logo ajustado.png" alt="Logo hospital">
+      </a>
+      <div class="mobile-menu-button">
+          <svg class="h-8 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
       </div>
-      <div class="sticky-top"> <!-- inicia el nav con stiky -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar" >
-          <div class="container-fluid">
-          <div class="container"><!-- Container del nav - agregado -->
-            <div class="row">
-              <div class="col-6">
-                <a class="navbar-brand" href="/"><h1>HOSPITAL Dr ARTURO OÑATIVA</h1></a>
-              </div>
-              <div class="col-6">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Institucional</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Intranet</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>      
-          </div>
-          </div>
-        </nav>    
-      </div> <!-- Culmina nav con bootstrap --> 
-    <!-- Imagen debajo del nav -->
-    <div class="img_header">
-      <img src="img/img_index/hospital4.jpg" alt="Hospital_Dr_Arturo_Oñativa">
+      <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Institucional</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/">Intranet</a></li>
+          
+      </ul>
+  </nav>
+  <div class="dropdown">
+      <div class="close-button">
+          <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+      </div>
+      <hr><hr>
+      <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Institucional</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/">Intranet</a></li>
+      </ul>
+     <hr>
+      <div class="button-container">
+          
+      </div>
+      <p class="copyright-text">Copyright © 2023</p>
+  </div>
+  <div class="dropdown-backdrop"></div>
+  <div class="titulo">
+    <a class="titulo-pag" ><h1 >HOSPITAL D. ARTURO OÑATIVA</h1></a>
+</div>
+    <div class="contenedor-imagenhospi">
+      <img class="imagenhospi" src="img/img_index/hospital3.jpg" alt="" />
     </div>
-    </header>
+  </header>
     
     <!--********** INICIA EL MAIN - COPIAR HASTA AQUÍ***************-->
     <main class="contenido">
