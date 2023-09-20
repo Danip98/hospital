@@ -278,42 +278,9 @@ body {
     }
 }
 
-/* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
-
-.contenido{
-    max-width: 1000px;
-    width: 90%;
-    margin: 2em auto;
-    display: grid;
-    gap:1.6em;
-    grid-template-rows: repeat(5,1fr);    
-}
 
 
-/******* seccion valores******** */
-.section_valores{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-items: center;
-    
-}
-/* contenedor de cada item */
-.val_item{
-    width: 50%;
-}
-/* imagenes de seccion valores */
-.section_valores img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.section_valores h2{
-    font-size: 1em;
-    text-align: center;
-    color: #152C40;
-    text-transform: uppercase;
-    padding-top: 1em;
-}
+/******** ESTILOS DEL MAIN *******/
 
 
 
@@ -342,36 +309,6 @@ footer ul, footer a{
     margin: 2em auto;
     gap:1.6em;
     grid-template-columns: repeat(3,1fr);
-}
-
-
-/* BREAKPOINTS */
-@media screen and (max-width: 768px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-    header .navbar-toggler{
-        margin-left: 8em;
-    }
-
-    .pie_pag{
-        
-    }
-
-
-
-}
-
-@media screen and (max-width: 992px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-
-    .navbar-toggler{
-        margin-left: 15em;
-    }  
 }
 
 

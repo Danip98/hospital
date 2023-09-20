@@ -2,66 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <!-- font awsome -->
-    <script src="https://kit.fontawesome.com/2c3c09dae5.js" crossorigin="anonymous"></script>
-    <!-- google-fonts fuente Merriweather -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@500&display=swap"
-        rel="stylesheet">
-    <!-- google-fonts fuente Playfair Display Open Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <!-- icono-->
-    <link rel="icon" href="./img/Logo/logo.ico" />
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style_index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Arturo Oñativa</title>
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/2c3c09dae5.js" crossorigin="anonymous"></script>
+  <!-- google-fonts fuente Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- google-fonts fuente Playfair Display Open Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- icono-->
+  <link rel="icon" href="./img/Logo/logo.ico" />
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="css/contacto.css" />
 </head>
 
-<body>
-    <header>
-        <div class="cabecera">
-            <!-- Cabecera columna 1 -->
-            <div class="cab_col">
-                <div><!-- LOGO -->
-                    <a href="/"><img src="img/Logo/logo ajustado.png" alt="" /></a>
-                </div>
-                <div><!-- Titulo/Nombre del hospital -->
-                    <a href="/">
-                        <h1>
-                            HOSPITAL ZONAL GENERAL DE AGUDOS <br />
-                            Dr ARTURO OÑATIVA
-                        </h1>
-                    </a>
-                </div>
-            </div>
 
-            <div class="cab_col">
-                <!-- Cabecera columna 2 -->
-                <div>
-                    <nav><!-- Navegación -->
-                        <a href="index.html">Inicio</a>
-                        <a href="servicios.html">Servicios</a>
-                        <a href="institucional.html">Institucional</a>
-                        <a href="noticias.html">Noticias</a>
-                        <a href="intranet.html">Intranet</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="index.html">
+          <img src="/img/Logo/logo ajustado.png" alt="Logo hospital">
+      </a>
+      <div class="mobile-menu-button">
+          <svg class="h-8 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+      </div>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="index.html/#noticias">Noticias</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/">Intranet</a></li>
+          
+      </ul>
+  </nav>
+  <div class="dropdown">
+      <div class="close-button">
+          <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+      </div>
+      <hr><hr>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a href="index.html/#noticias">Noticias</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/">Intranet</a></li>
+      </ul>
+     <hr>
+      <div class="button-container">
+          
+      </div>
+      <p class="copyright-text">Copyright © 2023</p>
+  </div>
+  <div class="dropdown-backdrop"></div>
+  <div class="titulo">
+    <a class="titulo-pag" ><h1 >HOSPITAL D. ARTURO OÑATIVA</h1></a>
+</div>
+    <div class="contenedor-imagenhospi">
+      <img class="imagenhospi" src="img/img_index/hospital3.jpg" alt="" />
+    </div>
+  </header>
 
     <!-- INICIA EL MAIN -->
     <main>
-        <!-- Imagen debajo del nav -->
-        <div>
-            <img class="imagehosp" src="img/img_index/hospital3.jpg" alt="" />
-        </div>
+        
     </main>
 
     <!-- Formulario de contacto -->

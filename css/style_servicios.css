@@ -361,28 +361,29 @@ body {
 
 
 
-
-/* FOOTER */
-footer {
+/********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
+footer{
     background-color: #03adc6;
 }
-
-.pie_pag {
-    display: flex;
+footer p{
+    margin: 0px; 
 }
 
-.pie_pag-col1,
-.pie_pag-col2,
-.pie_pag-col3 {
-    width: 33.3%;
-    padding: 2em;
+.contacto, .redes_group{
+    margin-top: 2em;
 }
 
-/* Redes sociales */
-.redessoc-group {
-    display: flex;
+footer ul, footer a{
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
 }
 
-.redessoc {
-    width: 50px;
+.pie_pag{
+    display: grid;
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    gap:1.6em;
+    grid-template-columns: repeat(3,1fr);
 }
