@@ -1,14 +1,14 @@
 /* Estilos para la barra de navegación principal */
+
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #F2F2F2;;
+    
     padding: 1rem;
 }
 
 .nav a.logo {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     text-decoration: none;
@@ -16,6 +16,7 @@
 
 .nav img {
     width: 40%;
+    
     
 }
 
@@ -25,6 +26,9 @@
     color: #03ADC6;
     cursor: pointer;
     display: none;
+    padding: 2px;
+    /* border: 4px solid #03ADC6; */
+    border-radius: 5px; 
 }
 
 .nav .mobile-menu-button svg {
@@ -35,8 +39,7 @@
 
 .nav ul {
     display: flex;
-    flex-direction: row; /* Cambia a columna en pantallas pequeñas */
-    
+    flex-direction: row; 
     list-style: none;
     margin: 0;
     padding: 0;
@@ -44,6 +47,8 @@
 
 .nav ul li {
     margin: 1rem;
+    display: flex;
+    
 }
 
 .nav ul li:last-child {
@@ -71,7 +76,7 @@
     width: 80%;
     max-width: 20rem;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #03ADC6;
     border-right: 1px solid #ccc;
     overflow-y: auto;
     z-index: 50;
@@ -111,7 +116,7 @@
 }
 
 .dropdown ul li a:hover {
-    color:  #03ADC6;;
+    color: white;
 }
 /* Estilos para el botón de cierre del menú desplegable */
 .close-button {
@@ -163,6 +168,7 @@
     text-align: center; /* Centra el texto horizontalmente (opcional) */
     width: 100%;
     background-color: #03ADC6;
+    border-radius: 15px;
 }
 
 /* Si tienes un elemento específico dentro de .titulo que deseas centrar horizontalmente, puedes usar la siguiente regla: */
@@ -173,6 +179,28 @@
     text-decoration: none;
     color: black;
 }
+
+.titulo .titulo-pag:hover {
+    color: #F2F2F2;
+   
+}
+.contenedor-imagenhospi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    /* Establece un ancho máximo para el contenedor */
+    max-width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    margin: 1rem auto; 
+    border-radius: 15px;/* Centra el contenedor horizontalmente */
+}
+
+.imagenhospi {
+    max-width: 100%; /* Hace que la imagen sea 100% del ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
 
@@ -182,20 +210,24 @@
     .nav ul {
         flex-direction: row; /* Vuelve a la disposición en fila */
         justify-content: space-between; /* Espaciado en torno a los elementos */
-        align-items: center; /* Centra los elementos en pantallas pequeñas */
+        align-items: center;
+        background-color: #03acc660; /* Centra los elementos en pantallas pequeñas */
     }
 
     .nav ul li {
         margin-bottom: 0;
         margin-right: 1rem;
+
     }
+   
 
     .nav ul li:last-child {
         margin-right: 0;
     }
 
     .nav .mobile-menu-button {
-        display: block; /* Muestra el botón de menú móvil en pantallas pequeñas */
+        display: flex;        align-items: end;
+        /* Muestra el botón de menú móvil en pantallas pequeñas */
     }
 
     .dropdown {
