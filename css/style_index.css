@@ -273,7 +273,7 @@ h1{
 
 
 /* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
-.contenido, .section_valores{
+.contenido{
     max-width: 1000px;
     width: 90%;
     margin: 2em auto;
@@ -282,19 +282,21 @@ h1{
     grid-template-rows: repeat(5,1fr);
     justify-content: center;
 }
-/******* seccion valores******** */
+/******* SECCION VALORES******** */
 .section_valores{
-    display: flex; 
-    justify-items: center;
-       
+    grid-column: 1 / span 5;
+    display: flex;
+    justify-items: center;   
+    margin: 2em auto;
+    gap:1.6em;       
 }
-/* contenedor de cada item */
+/* tamaño del contenedor de cada item */
 .section_valores .val_item{
-    width: 15%;
+    width: 20%;
 }
 /* imagenes de seccion valores */
 .section_valores .val_item img {
-    width: 70%;
+    width: 60%;
     border-radius: 50%;
     background-color: #d6dadb;
     border: 4px solid #e8ecee;
@@ -302,8 +304,9 @@ h1{
 .section_valores .val_item img:hover{    
     background-color: #e2f5fa;
     border: 4px solid #e2f5fa;    
-    width: 72%;
+    width: 62%;
 }
+/* subtitulos de seccion valores */
 .section_valores h2{
     font-size: 0.9em;
     text-align: center;
@@ -311,6 +314,12 @@ h1{
     text-transform: uppercase;
     
 }
+
+/* SECCION INSTITUCIONAL */
+.section_inst{
+    grid-column: 1 / span 5;
+}
+
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
     background-color: #03adc6;
@@ -369,14 +378,20 @@ footer ul, footer a{
     }
 
     /* seccion valores */
+    .section_valores{
+        margin: 1em auto;
+        gap:0.5em;  
+    }
     .section_valores .val_item img{
-        width: 100%;         
+        width: 67%;
     }
-
     .section_valores .val_item img:hover{
-        width: 102%;
+        width: 69%;
     }
 
+
+
+    
     .section_valores .val_item h2{
         font-size: 12px;
         text-transform: lowercase;
