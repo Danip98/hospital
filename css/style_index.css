@@ -296,12 +296,12 @@ h1{
 .section_valores .val_item img {
     width: 70%;
     border-radius: 50%;
-    background-color: #e8ecee;
+    background-color: #d6dadb;
     border: 4px solid #e8ecee;
 }
 .section_valores .val_item img:hover{    
     background-color: #e2f5fa;
-    border: 4px solid #dbf4f9;    
+    border: 4px solid #e2f5fa;    
     width: 72%;
 }
 .section_valores h2{
