@@ -1,7 +1,6 @@
 
 /* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
 /* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
-
 .colores {
     color: #F2F2F2;
     color: #152C40;
@@ -10,46 +9,34 @@
     color: #04BFBF;
 }
 
-*{
-    margin: 0;
+
+body {
+    margin-right: 10px;
     padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #F2F2F2;
-
-}
-
-h1{
+    background-color: #f2f2f2;
     font-family: 'Merriweather', serif;
-    font-size: 1em; 
-    color: #F2F2F2;
-    letter-spacing: 1px;
+    align-items: center;
 }
 
-h2, h3{
-    font-size: 1.5em;
+/* Estilos para la barra de navegación principal */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 5px;
     font-family: 'Merriweather', serif;
+    width: 90%;
 }
 
-h4, h5, h6{
-    font-size: 1em;
-    font-family: 'Merriweather', serif;
-}
-
-p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-}
-a{
+.nav a .logo {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
     text-decoration: none;
 }
-/* Estilos del logo */
-.logo img{
-    width: 18%;
-    padding-top: 2em;
-}
 
+HEAD
 header .container-fluid{
     background-color: rgba(21, 44, 64);    
 }
@@ -132,6 +119,253 @@ header .col-6{
   
   
 
+.nav img {
+    width: 40%;
+    
+    
+}
+
+.nav .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    color: #03ADC6;
+    cursor: pointer;
+    display: none;
+    padding: 2px;
+    /* border: 4px solid #03ADC6; */
+    border-radius: 5px; 
+}
+
+.nav .mobile-menu-button svg {
+    height: 3rem;
+    width: 4rem;
+    fill: currentColor;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 1rem;
+    display: flex;
+    
+}
+
+.nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+.nav ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #03ADC6;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    max-width: 15rem;
+    padding: 1rem;
+    background-color: #03ADC6;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+.dropdown hr {
+    margin: 0.5rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown ul li {
+    margin-bottom: 1rem;
+}
+
+.dropdown ul li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: color 0.3s;
+}
+
+.dropdown ul li a:hover {
+    color: white;
+}
+/* Estilos para el botón de cierre del menú desplegable */
+.close-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: black;
+    transition: fill 0.3s;
+}
+
+.close-button svg:hover {
+    fill:  #03ADC6;;
+}
+
+/* Estilos para el fondo del menú desplegable */
+.dropdown-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: #F2F2F2;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 49;
+    transition: opacity 0.3s;
+}
+
+/* Estilos para el botón de cierre de sesión y el texto de derechos de autor */
+.button-container {
+    padding-top: 1.5rem;
+}
+
+
+
+.copyright-text {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: black;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
+    align-items: center; /* Centra verticalmente el contenido dentro del elemento */
+    text-align: center; /* Centra el texto horizontalmente (opcional) */
+    width: 100%;
+    background-color: #03ADC6;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    text-shadow: 0 0 10px #fff8;
+}
+
+
+
+.titulo2 {
+    margin-left: 25%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 15px;
+    
+}
+
+
+.titulo .titulo-pag {
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff8;
+   
+}
+
+
+
+.contenedor-imagenhospi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%; 
+    margin-bottom: 1rem ; 
+}
+
+.imagenhospi {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+    .nav ul li {
+        display: none;
+    }
+    .nav ul {
+        flex-direction: row; /* Vuelve a la disposición en fila */
+        justify-content: space-between; /* Espaciado en torno a los elementos */
+        align-items: center;
+        background-color: #03acc660; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    .nav ul li {
+        margin-bottom: 0;
+        margin-right: 1rem;
+
+    }
+   
+
+    .nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .nav .mobile-menu-button {
+        display: flex;        align-items: end;
+        /* Muestra el botón de menú móvil en pantallas pequeñas */
+    }
+
+    .dropdown {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        max-width: none;
+    }
+
+    .titulo .titulo-pag {
+      font-size: 0.6rem;
+      background-color: #03ADC6;
+    }
+}
+
+
+
+/******** ESTILOS DEL MAIN *******/
+
+
+
+
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
     background-color: #03adc6;
@@ -157,36 +391,6 @@ footer ul, footer a{
     margin: 2em auto;
     gap:1.6em;
     grid-template-columns: repeat(3,1fr);
-}
-
-
-/* BREAKPOINTS */
-@media screen and (max-width: 768px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-    header .navbar-toggler{
-        margin-left: 8em;
-    }
-
-    .pie_pag{
-        
-    }
-
-
-
-}
-
-@media screen and (max-width: 992px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-
-    .navbar-toggler{
-        margin-left: 15em;
-    }  
 }
 
 
