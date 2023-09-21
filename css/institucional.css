@@ -3,9 +3,8 @@
 .colores {
     color: #F2F2F2;
     color: #152C40;
-    color: #06ADBF;
-    color: #0D0D0D;
     color: #04BFBF;
+    color: #03ADC6;
 }
 
 
@@ -18,6 +17,10 @@ body {
 }
 
 /* Estilos para la barra de navegación principal */
+h1{
+    font-size: 1.7em;
+    color: #152C40 ;
+}
 
 .nav {
     display: flex;
@@ -37,14 +40,14 @@ body {
 
 .nav img {
     width: 40%;
-    
-    
+
+
 }
 
 .nav .mobile-menu-button {
     display: flex;
     align-items: center;
-    color: #03ADC6;
+    color: rgba(3, 173, 198);
     cursor: pointer;
     display: none;
     padding: 2px;
@@ -68,8 +71,7 @@ body {
 
 .nav ul li {
     margin: 1rem;
-    display: flex;
-    
+    display: flex;    
 }
 
 .nav ul li:last-child {
@@ -77,9 +79,9 @@ body {
 }
 
 .nav ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    color: black;
+    color: #152C40;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -97,7 +99,7 @@ body {
     width: 60%;
     max-width: 15rem;
     padding: 1rem;
-    background-color: #03ADC6;
+    background-color: rgb(3, 173, 198);
     border-right: 1px solid #ccc;
     overflow-y: auto;
     z-index: 50;
@@ -172,16 +174,12 @@ body {
 .button-container {
     padding-top: 1.5rem;
 }
-
-
-
 .copyright-text {
     margin-top: 1rem;
     font-size: 0.75rem;
     text-align: center;
     color: black;
 }
-
 .titulo {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
@@ -193,33 +191,24 @@ body {
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
-
 .titulo:hover {
     
 }
-
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
-
-
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-    text-shadow: 0 0 10px #fff8;
-   
+    text-shadow: 0 0 10px #fff8;   
 }
-
-
-
 .contenedor-imagenhospi {
     display: flex;
     justify-content: center;

@@ -1,14 +1,3 @@
-/* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
-/* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
-.colores {
-    color: #F2F2F2;
-    color: #152C40;
-    color: #06ADBF;
-    color: #0D0D0D;
-    color: #04BFBF;
-}
-
-
 body {
     margin-right: 10px;
     padding: 0;
@@ -18,6 +7,10 @@ body {
 }
 
 /* Estilos para la barra de navegación principal */
+h1{
+    font-size: 1.7em;
+    color: #152C40 ;
+}
 
 .nav {
     display: flex;
@@ -26,27 +19,30 @@ body {
     margin: 5px;
     font-family: 'Merriweather', serif;
     width: 90%;
-    
-    flex-grow: 1;
-
 }
 
+.nav a .logo {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+}
 
 .nav img {
-    width: 50%;
-    height: 100%; 
-   
-    
+    width: 40%;
+
+
 }
 
 .nav .mobile-menu-button {
     display: flex;
     align-items: center;
-    color: #03ADC6;
+    color: rgba(3, 173, 198);
     cursor: pointer;
     display: none;
     padding: 2px;
-    
+    /* border: 4px solid #03ADC6; */
+    border-radius: 5px; 
 }
 
 .nav .mobile-menu-button svg {
@@ -61,14 +57,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-   
-    
 }
 
 .nav ul li {
     margin: 1rem;
-    display: flex;
-    
+    display: flex;    
 }
 
 .nav ul li:last-child {
@@ -76,9 +69,9 @@ body {
 }
 
 .nav ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    color: black;
+    color: #152C40;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -96,7 +89,7 @@ body {
     width: 60%;
     max-width: 15rem;
     padding: 1rem;
-    background-color: #03ADC6;
+    background-color: rgb(3, 173, 198);
     border-right: 1px solid #ccc;
     overflow-y: auto;
     z-index: 50;
@@ -171,16 +164,12 @@ body {
 .button-container {
     padding-top: 1.5rem;
 }
-
-
-
 .copyright-text {
     margin-top: 1rem;
     font-size: 0.75rem;
     text-align: center;
     color: black;
 }
-
 .titulo {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
@@ -189,39 +178,27 @@ body {
     width: 100%;
     background-color: #03ADC6;
     border-radius: 15px 15px 0 0;
-    cursor: pointer;
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
-
-
-
+.titulo:hover {
+    
+}
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
-    
-    
+    border-radius: 15px;    
 }
-
-.titulo3 {
-    color: #0D0D0D;
-}
-
-
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-    text-shadow: 0 0 10px #fff8;
-   
+    text-shadow: 0 0 10px #fff8;   
 }
-
-
-
 .contenedor-imagenhospi {
     display: flex;
     justify-content: center;
@@ -232,7 +209,8 @@ body {
 }
 
 .imagenhospi {
-    flex-grow: 1;
+    max-width: 100%; 
+    height: auto; 
 }
 
 
@@ -378,26 +356,15 @@ footer{
 footer p{
     margin: 0px; 
 }
-
-HEAD
-.pie_pag-col1,
-
-.pie_pag-col3 {
-    width: 33.3%;
-    padding: 2em;
-}
 .contacto, .redes_group{
     margin-top: 2em;
-
 }
-
 footer ul, footer a{
     list-style: none;
     padding-left: 0%;
     margin: 0%;
 }
-
-.pie_pa {
+.pie_pag{
     display: grid;
     max-width: 1000px;
     width: 90%;

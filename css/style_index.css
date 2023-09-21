@@ -4,6 +4,7 @@
     color: #F2F2F2;
     color: #152C40;
     color: #04BFBF;
+    color: #03ADC6;
 }
 
 
@@ -185,19 +186,14 @@ h1{
     align-items: center; /* Centra verticalmente el contenido dentro del elemento */
     text-align: center; /* Centra el texto horizontalmente (opcional) */
     width: 100%;
-    background-color: #06ADBF;
+    background-color: #03ADC6;
     border-radius: 15px 15px 0 0;
-    /* color: white; */
+    color: white;
     text-shadow: 0 0 10px #fff8;
 }
 .titulo:hover {
     
 }
-
-.titulo:hover {
-
-}
-
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
@@ -372,28 +368,7 @@ footer ul, footer a{
     gap:1.6em;
     grid-template-columns: repeat(3,1fr);
 }
-/* BREAKPOINTS */
-@media screen and (max-width: 768px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-    header .navbar-toggler{
-        margin-left: 8em;
-    }
-    /* .pie_pag{
-        
-    } */
-}
-@media screen and (max-width: 992px) {
-    header h1{
-        margin-bottom: 0;
-        padding-top: 0.3em;        
-    }
-    .navbar-toggler{
-        margin-left: 15em;
-    }  
-}
+
 /* Pendientes:
 1. ¿Como centrar la lista de navegación del footer, que quede alineada a la izquierda junto al subtitulo
 navegación?
