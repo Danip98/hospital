@@ -330,7 +330,7 @@ h1{
     
 }
 /* contenedor de cada item */
-.val_item{
+.section_valores .val_item{
     width: 50%;
 }
 /* imagenes de seccion valores */
