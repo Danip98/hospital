@@ -373,10 +373,8 @@ footer ul, footer a{
         width: 100%;         
     }
 
-    .section_valores img:hover{
-        background-color: rgb(104, 212, 239);
-        border: 4px solid #d1d6d8;
-        width: 52%;
+    .section_valores .val_item img:hover{
+        width: 102%;
     }
 
     .section_valores .val_item h2{
