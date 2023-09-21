@@ -404,17 +404,20 @@ footer ul, footer a{
     }
 
     .objetivo{  
-        padding: 0 1em 0 1em;
+        padding: 0;
+        margin: 0; 
     }
 
     .section_inst p{
         font-size: 0.8em;
+        padding-left: 1em;
+        padding-right: 1em;
     } 
     
     .inst_img{
         margin-top: 8em;
         display: block;
-        margin: 2em;
+        margin: 1em;
         align-content: center;
     }
     .inst_img_item{
