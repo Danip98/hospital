@@ -19,6 +19,10 @@ body {
 }
 
 /* Estilos para la barra de navegación principal */
+h1{
+    font-size: 1.7em;
+    color: #f2f2f2 ;
+}
 
 .nav {
     display: flex;
@@ -45,7 +49,7 @@ body {
 .nav .mobile-menu-button {
     display: flex;
     align-items: center;
-    color: #03ADC6;
+    color: rgba(3, 173, 198);
     cursor: pointer;
     display: none;
     padding: 2px;
@@ -69,8 +73,7 @@ body {
 
 .nav ul li {
     margin: 1rem;
-    display: flex;
-    
+    display: flex;    
 }
 
 .nav ul li:last-child {
@@ -78,9 +81,9 @@ body {
 }
 
 .nav ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    color: black;
+    color: #152C40;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -98,7 +101,7 @@ body {
     width: 60%;
     max-width: 15rem;
     padding: 1rem;
-    background-color: #03ADC6;
+    background-color: rgb(3, 173, 198);
     border-right: 1px solid #ccc;
     overflow-y: auto;
     z-index: 50;
@@ -173,54 +176,41 @@ body {
 .button-container {
     padding-top: 1.5rem;
 }
-
-
-
 .copyright-text {
     margin-top: 1rem;
     font-size: 0.75rem;
     text-align: center;
     color: black;
 }
-
 .titulo {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
     align-items: center; /* Centra verticalmente el contenido dentro del elemento */
     text-align: center; /* Centra el texto horizontalmente (opcional) */
     width: 100%;
-    background-color: #03ADC6;
+    background-color: #06ADBF;
     border-radius: 15px 15px 0 0;
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
-
 .titulo:hover {
     
 }
-
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
-
-
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-    text-shadow: 0 0 10px #fff8;
-   
+    text-shadow: 0 0 10px #fff8;   
 }
-
-
-
 .contenedor-imagenhospi {
     display: flex;
     justify-content: center;
@@ -234,11 +224,58 @@ body {
     max-width: 100%; 
     height: auto; 
 }
+/******** ESTILOS DEL MAIN *******/
+
+.contenido{
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    gap:1.6em;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.contenido>*{
+    text-align: center;
+}
+
+.section_valores{
+    grid-column: 1 / span 5;
+    display: flex;
+    gap: 1em;
+    
+}
+
+.section_valores .val_item{
+    width: 20%;
+    
+}
+
+.section_valores img{
+    width: 45%;
+    border-radius: 50%;
+    background-color: rgb(214, 209, 209);
+    border: 4px solid rgb(228, 225, 225);
+    
+}
+.section_valores img:hover{
+    width: 47%;
+    cursor: pointer;
+    /* border: 2px solid #d6f0f3; */
+    background-color: rgba(245, 248, 248, 0.2);
+}
+
+.section_valores h2{
+    font-size: 0.8em;
+    text-align: center;
+    color: #152C40;
+    text-transform: uppercase;
+}
 
 
 
 
-/* Estilos para pantallas pequeñas */
+/* ESTILOS PANTALLAS PEQUEÑAS */
 @media screen and (max-width: 768px) {
 
     .nav ul li {
@@ -277,13 +314,6 @@ body {
       background-color: #03ADC6;
     }
 }
-
-
-
-/******** ESTILOS DEL MAIN *******/
-
-
-
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
     background-color: #03adc6;
