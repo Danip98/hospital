@@ -101,31 +101,36 @@ header .col-6{
 
 
 /******* seccion valores******** */
-.section_valores{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-items: center;
-    
-}
-/* contenedor de cada item */
-.val_item{
-    width: 50%;
-}
-/* imagenes de seccion valores */
-.section_valores img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.section_valores h2{
-    font-size: 1em;
+.section_valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .val_carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 30px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+  
+  .val_item {
+    flex: 0 0 auto;
     text-align: center;
-    color: #152C40;
-    text-transform: uppercase;
-    padding-top: 1em;
-}
-
-
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Agrega transición para suavizar los desplazamientos */
+  }
+  
+  .val_item img {
+    width: 100%;
+    
+    /* border-radius: 50%; */
+  }
+  
+  
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{

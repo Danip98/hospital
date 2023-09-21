@@ -25,3 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+const valCarousel = document.querySelector(".val_carousel");
+const valItems = document.querySelectorAll(".val_item");
+
+let currentIndex = 0;
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % valItems.length;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const translateValue = -currentIndex * 100;
+  valCarousel.style.transform = `translateX(${translateValue}%)`;
+}
+
+// Configura un temporizador para cambiar automáticamente las imágenes
+setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos (ajusta según tus preferencias)
