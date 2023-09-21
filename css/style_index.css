@@ -272,6 +272,68 @@ h1{
 
 
 
+/* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
+.contenido, .section_valores{
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    display: grid;
+    gap:1.6em;
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+}
+/******* seccion valores******** */
+.section_valores{
+    display: flex; 
+    justify-items: center;
+       
+}
+/* contenedor de cada item */
+.section_valores .val_item{
+    width: 15%;
+}
+/* imagenes de seccion valores */
+.section_valores .val_item img {
+    width: 70%;
+    border-radius: 50%;
+    background-color: #e8ecee;
+    border: 4px solid #e8ecee;
+}
+.section_valores .val_item img:hover{    
+    background-color: #e2f5fa;
+    border: 4px solid #dbf4f9;    
+    width: 72%;
+}
+.section_valores h2{
+    font-size: 0.9em;
+    text-align: center;
+    color: #04223c;
+    text-transform: uppercase;
+    
+}
+/********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
+footer{
+    background-color: #03adc6;
+}
+footer p{
+    margin: 0px; 
+}
+.contacto, .redes_group{
+    margin-top: 2em;
+}
+footer ul, footer a{
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+}
+.pie_pag{
+    display: grid;
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    gap:1.6em;
+    grid-template-columns: repeat(3,1fr);
+}
 
 /* ESTILOS PANTALLAS PEQUEÑAS */
 @media screen and (max-width: 768px) {
@@ -308,9 +370,13 @@ h1{
 
     /* seccion valores */
     .section_valores .val_item img{
-        width: 100%;
-        
-        
+        width: 100%;         
+    }
+
+    .section_valores img:hover{
+        background-color: rgb(104, 212, 239);
+        border: 4px solid #d1d6d8;
+        width: 52%;
     }
 
     .section_valores .val_item h2{
@@ -320,69 +386,6 @@ h1{
         
         
     
-}
-
-/* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
-.contenido, .section_valores{
-    max-width: 1000px;
-    width: 90%;
-    margin: 2em auto;
-    display: grid;
-    gap:1.6em;
-    grid-template-rows: repeat(5,1fr);
-    justify-content: center;
-}
-/******* seccion valores******** */
-.section_valores{
-    display: flex; 
-    justify-items: center;
-       
-}
-/* contenedor de cada item */
-.section_valores .val_item{
-    width: 15%;
-}
-/* imagenes de seccion valores */
-.val_item img {
-    width: 50%;
-    border-radius: 50%;
-    background-color: rgb(244, 248, 249);
-    border: 4px solid #d1d6d8;
-}
-.section_valores img:hover{
-    background-color: rgb(104, 212, 239);
-    border: 4px solid #d1d6d8;
-    width: 52%;
-}
-.section_valores h2{
-    font-size: 0.9em;
-    text-align: center;
-    color: #04223c;
-    text-transform: uppercase;
-    
-}
-/********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
-footer{
-    background-color: #03adc6;
-}
-footer p{
-    margin: 0px; 
-}
-.contacto, .redes_group{
-    margin-top: 2em;
-}
-footer ul, footer a{
-    list-style: none;
-    padding-left: 0%;
-    margin: 0%;
-}
-.pie_pag{
-    display: grid;
-    max-width: 1000px;
-    width: 90%;
-    margin: 2em auto;
-    gap:1.6em;
-    grid-template-columns: repeat(3,1fr);
 }
 
 /* Pendientes:
