@@ -1,11 +1,8 @@
-
 /* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
 /* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
 .colores {
     color: #F2F2F2;
     color: #152C40;
-    color: #06ADBF;
-    color: #0D0D0D;
     color: #04BFBF;
 }
 
@@ -42,8 +39,8 @@ h1{
 
 .nav img {
     width: 40%;
-    
-    
+
+
 }
 
 .nav .mobile-menu-button {
@@ -73,7 +70,12 @@ h1{
 
 .nav ul li {
     margin: 1rem;
+<<<<<<< HEAD
     display: flex;    
+=======
+    display: flex;
+
+>>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 
 .nav ul li:last-child {
@@ -193,23 +195,41 @@ h1{
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
+<<<<<<< HEAD
 .titulo:hover {
     
 }
+=======
+
+.titulo:hover {
+
+}
+
+>>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
+<<<<<<< HEAD
     border-radius: 15px;    
+=======
+    border-radius: 15px;
+
+>>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
+<<<<<<< HEAD
     text-shadow: 0 0 10px #fff8;   
+=======
+    text-shadow: 0 0 10px #fff8;
+
+>>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 .contenedor-imagenhospi {
     display: flex;
@@ -293,7 +313,7 @@ h1{
         margin-right: 1rem;
 
     }
-   
+
 
     .nav ul li:last-child {
         margin-right: 0;
@@ -310,10 +330,46 @@ h1{
     }
 
     .titulo .titulo-pag {
-      font-size: 0.6rem;
-      background-color: #03ADC6;
+    font-size: 0.6rem;
+    background-color: #03ADC6;
     }
 }
+<<<<<<< HEAD
+=======
+
+/* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
+.contenido{
+    max-width: 1000px;
+    width: 90%;
+    margin: 2em auto;
+    display: grid;
+    gap:1.6em;
+    grid-template-rows: repeat(5,1fr);    
+}
+/******* seccion valores******** */
+.section_valores{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    
+}
+/* contenedor de cada item */
+.val_item{
+    width: 50%;
+}
+/* imagenes de seccion valores */
+.section_valores img {
+    width: 100%;
+    border-radius: 50%;
+}
+.section_valores h2{
+    font-size: 1em;
+    text-align: center;
+    color: #152C40;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+>>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
     background-color: #03adc6;
@@ -321,17 +377,14 @@ footer{
 footer p{
     margin: 0px; 
 }
-
 .contacto, .redes_group{
     margin-top: 2em;
 }
-
 footer ul, footer a{
     list-style: none;
     padding-left: 0%;
     margin: 0%;
 }
-
 .pie_pag{
     display: grid;
     max-width: 1000px;
@@ -340,25 +393,31 @@ footer ul, footer a{
     gap:1.6em;
     grid-template-columns: repeat(3,1fr);
 }
-
-
+/* BREAKPOINTS */
+@media screen and (max-width: 768px) {
+    header h1{
+        margin-bottom: 0;
+        padding-top: 0.3em;        
+    }
+    header .navbar-toggler{
+        margin-left: 8em;
+    }
+    /* .pie_pag{
+        
+    } */
+}
+@media screen and (max-width: 992px) {
+    header h1{
+        margin-bottom: 0;
+        padding-top: 0.3em;        
+    }
+    .navbar-toggler{
+        margin-left: 15em;
+    }  
+}
 /* Pendientes:
 1. ¿Como centrar la lista de navegación del footer, que quede alineada a la izquierda junto al subtitulo
 navegación?
 2. No funciona el stiky debajo de la imagen del nav hacia abajo PORQUEEEEEEEE - MIERDAAAA?
 3. El responsive del footer lo quiero hacer con grid area, o lo q salga. XD
 4. Armar el main.
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
