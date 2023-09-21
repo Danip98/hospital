@@ -228,6 +228,8 @@ a{
 }
 /******** ESTILOS DEL MAIN *******/
 
+/* seccion valores */
+
 .contenido{
     max-width: 1000px;
     width: 90%;
@@ -245,6 +247,7 @@ a{
     grid-column: 1 / span 5;
     display: flex;
     gap: 1em;
+    padding-top: 2em;
     
 }
 
@@ -272,6 +275,46 @@ a{
     text-align: center;
     color: #152C40;
     text-transform: uppercase;
+}
+
+/* sección institucional y noticias */
+.contenido_2{
+    max-width: 1000px;
+    width: 85%;
+    margin: 2em auto;
+    gap:1.6em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "section_inst      section_inst       section_inst";
+                        
+}
+
+.contenido_2 .section_inst{
+    grid-column-start: section_inst;
+    grid-column-end: section_inst;
+}
+
+.somos{
+    margin-top: 4em;
+    text-align: center;
+    padding: 4em;
+}
+.objetivo{    
+    text-align: center;
+    padding: 4em 4em 0 4em;
+}
+
+.inst_img{
+    display: flex; 
+}
+.inst_img_item{
+    width: 33,3%;
+    margin: 1em;
+}
+.inst_img_item img{
+    width: 100%;
+    
+    border-radius: 5%;
 }
 
 
@@ -346,14 +389,11 @@ footer ul, footer a{
     .section_valores .val_item img:hover{
         width: 69%;
     }
-
-
-
-    
     .section_valores .val_item h2{
         font-size: 12px;
         text-transform: lowercase;
-}
+    }
+    /* seccion institucional */
         
         
     
