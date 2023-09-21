@@ -70,12 +70,7 @@ h1{
 
 .nav ul li {
     margin: 1rem;
-<<<<<<< HEAD
     display: flex;    
-=======
-    display: flex;
-
->>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 
 .nav ul li:last-child {
@@ -195,41 +190,28 @@ h1{
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
-<<<<<<< HEAD
 .titulo:hover {
     
 }
-=======
 
 .titulo:hover {
 
 }
 
->>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
-<<<<<<< HEAD
     border-radius: 15px;    
-=======
-    border-radius: 15px;
-
->>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-<<<<<<< HEAD
     text-shadow: 0 0 10px #fff8;   
-=======
-    text-shadow: 0 0 10px #fff8;
-
->>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 }
 .contenedor-imagenhospi {
     display: flex;
@@ -334,8 +316,6 @@ h1{
     background-color: #03ADC6;
     }
 }
-<<<<<<< HEAD
-=======
 
 /* ********ESTILOS DEL MAIN/contenido - COPIAR HASTA AQUÍ*************/
 .contenido{
@@ -369,7 +349,6 @@ h1{
     text-transform: uppercase;
     padding-top: 1em;
 }
->>>>>>> dd2d339724085639a1dde5ac62c7b7d65099dc0c
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 footer{
     background-color: #03adc6;
