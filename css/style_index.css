@@ -476,15 +476,14 @@ funcionaba aplicando el estilo a todas juntas */
 /* grid area del footer-columnas */
 .pie_pag-col1{
     grid-area: pie_pag-col1;
-    padding-left: 6em;
+    padding-left: 4em;
 }
 .pie_pag-col2{
     grid-area: pie_pag-col2;
     
 }
 .pie_pag-col3{
-    grid-area: pie_pag-col3;
-    margin-right: 4em;
+    grid-area: pie_pag-col3;    
 }
 .pie_pag-col4{
     grid-area: pie_pag-col4;
@@ -492,16 +491,14 @@ funcionaba aplicando el estilo a todas juntas */
 }
 .footer {
     background-color: #03adc6;
-    padding-bottom: 15px;
+    padding: 2em 0 3em 0;
     /*le agregué para que quede al borde y no se vea un espacio en blanco. -Dani*/
 
-    display: grid;
-    
+    display: grid;    
     width: 100%;
     padding:2em auto;  
     gap: 1.6em;    
-    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";
-    
+    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";    
 }
 
 footer p {
@@ -509,29 +506,37 @@ footer p {
     font-family: 'Open Sans', sans-serif;
     color:#0b1721;
     font-size: 0.9em;
-    font-weight: bold;
+    
 }
 
 .contacto {
     margin-top: 2em;
 }
 
-footer ul,
-footer a h5 {
+.footer ul,
+.footer a h5,
+.pie_pag-col2 a {
     list-style: none;
     padding-left: 0%;
     margin: 0%;
     font-family: 'Open Sans', sans-serif;
     color:#0b1721;
-    font-size: 1em;
-    margin-top: 0.8em;
+    font-size: 0.9em;
+    margin-top: 0.6em;
+    font-weight: lighter;
 }
 footer h4{
-    font-family: 'Open Sans', sans-serif;
+    
     color:#0b1721;
     font-size: 1em;
     font-family: 'Merriweather', serif; 
     text-decoration: underline;
+}
+
+.pie_pag-col2 a,
+.pie_pag-col2 li{
+    
+    margin-bottom: 0.5em;    
 }
 
 
