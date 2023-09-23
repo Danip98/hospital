@@ -539,13 +539,13 @@ footer h4{
     margin-bottom: 0.5em;    
 }
 
-
-
-.footer .pie_pag {
-         
+/* estilos de registrase */
+.registrarse h4, .registrarse input{
+    margin-bottom: 1em;   
 }
-
-
+.registrarse button{
+    border-radius: 2%;
+}
 
 
 /* ESTILOS PANTALLAS PEQUEÑAS */
@@ -659,13 +659,24 @@ footer h4{
     }
 
     /* footer */
-    .pie_pag {
-        grid-template-rows: repeat(4,1fr);       
-        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col1"   
-                            "pie_pag-col2   pie_pag-col2    pie_pag-col2"
-                            "pie_pag-col3   pie_pag-col3    pie_pag-col3"
-                            "pie_pag-col4   pie_pag-col4    pie_pag-col4";
-            
+    .footer {
+        padding-left:3em ;               
+        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"   
+                            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";           
+    }
+
+    .pie_pag-col1{
+        padding-left: 0;
+    }
+    .pie_pag-col4{       
+        margin-right: 0;
+    }
+    .pie_pag-col2, .pie_pag-col4{
+        margin-right: 3em;
+    }
+
+    .pie_pag-col4 .registrarse input{
+        width: 100px;
     }
 
 
