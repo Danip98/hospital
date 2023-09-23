@@ -492,8 +492,6 @@ funcionaba aplicando el estilo a todas juntas */
 .footer {
     background-color: #03adc6;
     padding: 2em 0 3em 0;
-    /*le agregué para que quede al borde y no se vea un espacio en blanco. -Dani*/
-
     display: grid;    
     width: 100%;
     padding:2em auto;  
