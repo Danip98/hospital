@@ -10,30 +10,35 @@
 
 body {
     margin-right: 10px;
-    margin: 0%; /*le agregué para que quede al borde y no se vean espacios en blanco en el footer. -Dani*/
+    margin: 0%;
+    /*le agregué para que quede al borde y no se vean espacios en blanco en el footer. -Dani*/
     background-color: #f2f2f2;
     font-family: 'Merriweather', serif;
     align-items: center;
 }
 
 /* Estilos para la barra de navegación principal */
-h1, h2{
+h1,
+h2 {
     font-size: 1.7em;
-    color: #152C40 ;
+    color: #152C40;
 }
-h3{
+
+h3 {
     font-size: 1em;
     color: #152C40;
 }
-p{
-    font-family: 'Open Sans', sans-serif; 
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #152C40;
 }
-hr{
+
+hr {
     border: 1px solid #04BFBF;
 }
 
@@ -65,7 +70,7 @@ hr{
     display: none;
     padding: 2px;
     /* border: 4px solid #03ADC6; */
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .nav .mobile-menu-button svg {
@@ -76,7 +81,7 @@ hr{
 
 .nav ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -84,7 +89,7 @@ hr{
 
 .nav ul li {
     margin: 1rem;
-    display: flex;    
+    display: flex;
 }
 
 .nav ul li:last-child {
@@ -154,6 +159,7 @@ hr{
 .dropdown ul li a:hover {
     color: white;
 }
+
 /* Estilos para el botón de cierre del menú desplegable */
 .close-button {
     display: flex;
@@ -169,7 +175,8 @@ hr{
 }
 
 .close-button svg:hover {
-    fill:  #03ADC6;;
+    fill: #03ADC6;
+    ;
 }
 
 /* Estilos para el fondo del menú desplegable */
@@ -187,99 +194,108 @@ hr{
 .button-container {
     padding-top: 1.5rem;
 }
+
 .copyright-text {
     margin-top: 1rem;
     font-size: 0.75rem;
     text-align: center;
     color: black;
 }
+
 .titulo {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
-    align-items: center; /* Centra verticalmente el contenido dentro del elemento */
-    text-align: center; /* Centra el texto horizontalmente (opcional) */
+    justify-content: center;
+    /* Centra horizontalmente el contenido dentro del elemento */
+    align-items: center;
+    /* Centra verticalmente el contenido dentro del elemento */
+    text-align: center;
+    /* Centra el texto horizontalmente (opcional) */
     width: 100%;
     background-color: #03ADC6;
     border-radius: 15px 15px 0 0;
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
-.titulo:hover {
-    
-}
+
+.titulo:hover {}
+
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     width: 50%;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
+
 .titulo .titulo-pag {
     margin: 0;
     padding: 0;
     max-width: 90%;
     text-decoration: none;
-    text-shadow: 0 0 10px #fff8;   
+    text-shadow: 0 0 10px #fff8;
 }
+
 .contenedor-imagenhospi {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 100%; 
-    margin-bottom: 1rem ;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .imagenhospi {
     max-width: 100%;
     height: auto;
 }
+
 /******** ESTILOS DEL MAIN *******/
 
 /* seccion valores */
 
-.contenido{
+.contenido {
     max-width: 1000px;
     width: 90%;
     margin: 2em auto;
-    gap:1.6em;
+    gap: 1.6em;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.contenido>*{
+.contenido>* {
     text-align: center;
 }
 
-.section_valores{
+.section_valores {
     grid-column: 1 / span 5;
     display: flex;
     gap: 1em;
     padding-top: 2em;
-    
+
 }
 
-.section_valores .val_item{
+.section_valores .val_item {
     width: 20%;
-    
+
 }
 
-.section_valores .val_item img{
+.section_valores .val_item img {
     width: 50%;
     border-radius: 50%;
     background-color: #e6f8f8;
     border: 4px solid #dbe6e6;
-    
+
 }
-.section_valores .val_item img:hover{
+
+.section_valores .val_item img:hover {
     width: 54%;
     cursor: pointer;
     border: 4px solid #e3eaea;
     background-color: #e3eaea;
 }
 
-.section_valores .val_item h2{
+.section_valores .val_item h2 {
     font-size: 0.8em;
     text-align: center;
     color: #152C40;
@@ -288,114 +304,166 @@ hr{
 
 /* sección institucional y noticias */
 
-.section_noticias{
+.section_noticias {
     grid-area: section_noticias;
 }
 
-.section_inst{
+.section_inst {
     grid-area: section_inst;
 }
-.contenido_2{
+
+.contenido_2 {
     max-width: 1000px;
     width: 85%;
     margin: 2em auto;
-    gap:1.6em;
+    gap: 1.6em;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "section_inst          section_inst       section_inst"
-                         "section_noticias      section_noticias   section_noticias";
-                        
+                         "section_noticias      section_noticias   section_noticias"
+                         
+
 }
 
-.contenido_2 .section_inst{
+.contenido_2 .section_inst {
     grid-column-start: section_inst;
     grid-column-end: section_inst;
 }
 
-.somos{
+.somos {
     margin-top: 1em;
     text-align: center;
     padding: 4em;
 }
-.objetivo{    
+
+.objetivo {
     text-align: center;
     padding: 4em 4em 4em 4em;
 }
 
-.inst_img{
-    display: flex; 
+.inst_img {
+    display: flex;
 }
-.inst_img_item{
+
+.inst_img_item {
     width: 50%;
     margin: 1em;
 }
-.inst_img_item img{
-    width: 100%;    
+
+.inst_img_item img {
+    width: 100%;
     border-radius: 3%;
 }
 
 /* SECCION NOTICIAS */
 
-.section_noticias{
-    padding: 4em 0 4em 0;    
+.section_noticias {
+    padding: 4em 0 4em 0;
 }
-.section_noticias h2{
+
+.section_noticias h2 {
     text-align: center;
 }
-/* .section_noticias .not_item{
-    padding: 2em 0 2em 0;
-    gap: 1.6em;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);      
-} */
 
-.noticia1{  
-    grid-area: noticia1;    
+/* Gris area de cada caja de noticias */
+.noticia1 {
+    grid-area: noticia1;
 }
 
-.noticia2{
-    grid-area: noticia2;    
+.noticia2 {
+    grid-area: noticia2;
 }
 
-.noticia3{
+.noticia3 {
     grid-area: noticia3;
 }
-.noticia4{
+
+.noticia4 {
     grid-area: noticia4;
 }
-.noticia5{
+
+.noticia5 {
     grid-area: noticia5;
 }
-.noticia6{
+
+.noticia6 {
     grid-area: noticia6;
 }
 
-.not_item{
+/* contenedor padre de las noticias */
+.not_item {
     display: grid;
     grid-template-areas: "noticia1    noticia2  noticia3"
-                         "noticia4      noticia5    noticia6";
+        "noticia4      noticia5    noticia6";
 
     grid-gap: 1.6em;
     gap: 1.6em;
     padding: 2em 0 2em 0;
 }
-.not_item img{
-    width: 100%;
-    border-radius: 3%;
-    margin-top: 2em;
-}
-.not_item h3, .not_item p{
-    padding: 0.5em;
-    margin: 0;
+
+/* estilo de las cajas de noticias */
+.noticia1,
+.noticia2,
+.noticia3,
+.noticia4,
+.noticia5,
+.noticia6 {
+    background-color: #e6f8f8;
+    border-radius: 5%;
+    border: 0.4em solid #eaebec;
 }
 
-.not_item p{
-    font-size: 0.8em;
-    margin: 0;
+/* estilos hover de las cajas de noticias/--los tuve que hacer por separado porque no me 
+funcionaba aplicando el estilo a todas juntas */
+.noticia1:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
 }
-.not_item a{
-    font-weight: bold;
+
+.noticia2:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
+}
+
+.noticia3:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
+}
+.noticia4:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
+}
+.noticia5:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
+}
+.noticia6:hover {
+    border: 6px solid #04BFBF;
+    transition: 3s;
+}
+
+.not_item img {
+    width: 100%;
+    border-radius: 5%;
+
+}
+
+/* estilos de los subtitulos y las p de las noticias */
+.not_item h3,
+.not_item p {
+    padding: 0.8em;
+    margin: 0;
+    color: #111c39;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.not_item p {
+    font-size: 0.8em;
+}
+
+.not_item .verMas {
     color: black;
+    font-weight: bold;
 }
 
 
@@ -405,29 +473,66 @@ hr{
 
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
-footer{
+footer {
     background-color: #03adc6;
-    padding-bottom: 15px; /*le agregué para que quede al borde y no se vea un espacio en blanco. -Dani*/
+    padding-bottom: 15px;
+    /*le agregué para que quede al borde y no se vea un espacio en blanco. -Dani*/
 }
-footer p{
-    margin: 0px; 
+
+footer p {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color:#0b1721;
+    font-size: 0.9em;
+    font-weight: bold;
 }
-.contacto, .redes_group{
+
+.contacto,
+.redes_group {
     margin-top: 2em;
 }
-footer ul, footer a{
+
+footer ul,
+footer a h5 {
     list-style: none;
     padding-left: 0%;
     margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color:#0b1721;
+    font-size: 1em;
+    margin-top: 0.8em;
 }
-.pie_pag{
+footer h4{
+    font-family: 'Open Sans', sans-serif;
+    color:#0b1721;
+    font-size: 1.3em;
+    font-family: 'Merriweather', serif; 
+    text-decoration: underline;
+}
+
+/* grid area del footer-columnas */
+.pie_pag-col1{
+    grid-area: pie_pag-col1;
+}
+.pie_pag-col2{
+    grid-area: pie_pag-col2;
+}
+.pie_pag-col3{
+    grid-area: pie_pag-col3;
+}
+
+.pie_pag {
     display: grid;
     max-width: 1000px;
     width: 90%;
-    margin: 2em auto;
-    gap:1.6em;
-    grid-template-columns: repeat(3,1fr);
+    margin: 2em 5em 2em 5em;
+    gap: 1.6em;
+    grid-template-areas: "pie_pag-col1   pie_pag-col2 ";
+        
 }
+
+
+
 
 /* ESTILOS PANTALLAS PEQUEÑAS */
 @media screen and (max-width: 768px) {
@@ -435,103 +540,127 @@ footer ul, footer a{
     .nav ul li {
         display: none;
     }
+
     .nav ul {
-        flex-direction: row; /* Vuelve a la disposición en fila */
-        justify-content: space-between; /* Espaciado en torno a los elementos */
+        flex-direction: row;
+        /* Vuelve a la disposición en fila */
+        justify-content: space-between;
+        /* Espaciado en torno a los elementos */
         align-items: center;
-        background-color: #03acc660; /* Centra los elementos en pantallas pequeñas */
+        background-color: #03acc660;
+        /* Centra los elementos en pantallas pequeñas */
     }
 
     .nav ul li {
         margin-bottom: 0;
         margin-right: 1rem;
     }
+
     .nav ul li:last-child {
         margin-right: 0;
     }
+
     .nav .mobile-menu-button {
-        display: flex;        align-items: end;
+        display: flex;
+        align-items: end;
         /* Muestra el botón de menú móvil en pantallas pequeñas */
     }
+
     .dropdown {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        width: 100%;
+        /* Ocupa todo el ancho en pantallas pequeñas */
         max-width: none;
     }
+
     .titulo .titulo-pag {
-    font-size: 0.6rem;
-    background-color: #03ADC6;
+        font-size: 0.6rem;
+        background-color: #03ADC6;
     }
 
     /* seccion valores */
-    .section_valores{        
-        gap:0.5em;
-        padding-top: 0.4em;  
+    .section_valores {
+        gap: 0.5em;
+        padding-top: 0.4em;
     }
-    .section_valores .val_item img{
+
+    .section_valores .val_item img {
         width: 67%;
     }
-    .section_valores .val_item img:hover{
+
+    .section_valores .val_item img:hover {
         width: 69%;
     }
-    .section_valores .val_item h2{
+
+    .section_valores .val_item h2 {
         font-size: 12px;
         text-transform: lowercase;
     }
+
     /* seccion institucional */
-    .somos{
+    .somos {
         padding: 0;
-        margin: 0;        
+        margin: 0;
     }
 
-    .objetivo{  
+    .objetivo {
         padding: 0 0 4em 0;
-        margin: 0; 
-    }   
+        margin: 0;
+    }
 
-    .section_inst p{
+    .section_inst p {
         font-size: 0.8em;
         padding-left: 1em;
         padding-right: 1em;
-    } 
-    
-    .inst_img{
+    }
+
+    .inst_img {
         margin-top: 8em;
         display: block;
         margin: 1em;
         align-content: center;
     }
-    .inst_img_item{
+
+    .inst_img_item {
         width: 100%;
         margin: 2em 0 0 0;
     }
 
     /* seccion noticias */
 
-    .section_noticias{
+    .section_noticias {
         padding-top: 0;
     }
 
-    .not_item{
+    .not_item {
         grid-template-areas: "noticia1 noticia1 noticia1"
-                            "noticia2 noticia2 noticia2"
-                            "noticia3 noticia3 noticia3"
-                            "noticia4 noticia4 noticia4"
-                            "noticia5 noticia5 noticia5"
-                            "noticia6 noticia6 noticia6";
+            "noticia2 noticia2 noticia2"
+            "noticia3 noticia3 noticia3"
+            "noticia4 noticia4 noticia4"
+            "noticia5 noticia5 noticia5"
+            "noticia6 noticia6 noticia6";
     }
 
-    .not_item .noticia1 img{
+    .not_item .noticia1 img {
         margin-top: 0;
     }
 
+    /* footer */
+    .pie_pag {
+       
+        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col1"   
+                            "pie_pag-col2   pie_pag-col2    pie_pag-col2";
+            
+    }
 
-    
-        
 
-    
-        
-        
-    
+
+
+
+
+
+
+
+
 }
 
 /* Pendientes:
