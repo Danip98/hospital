@@ -17,9 +17,16 @@ body {
 }
 
 /* Estilos para la barra de navegación principal */
-h1{
+h1, h2{
     font-size: 1.7em;
     color: #152C40 ;
+}
+h3{
+    font-size: 1em;
+    color: #152C40;
+}
+p{
+    font-family: 'Open Sans', sans-serif; 
 }
 
 a{
@@ -48,8 +55,6 @@ hr{
 
 .nav img {
     width: 40%;
-
-
 }
 
 .nav .mobile-menu-button {
@@ -282,6 +287,14 @@ hr{
 }
 
 /* sección institucional y noticias */
+
+.section_noticias{
+    grid-area: section_noticias;
+}
+
+.section_inst{
+    grid-area: section_inst;
+}
 .contenido_2{
     max-width: 1000px;
     width: 85%;
@@ -289,7 +302,8 @@ hr{
     gap:1.6em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "section_inst      section_inst       section_inst";
+    grid-template-areas: "section_inst          section_inst       section_inst"
+                         "section_noticias      section_noticias   section_noticias";
                         
 }
 
@@ -305,7 +319,7 @@ hr{
 }
 .objetivo{    
     text-align: center;
-    padding: 4em 4em 0 4em;
+    padding: 4em 4em 4em 4em;
 }
 
 .inst_img{
@@ -316,10 +330,75 @@ hr{
     margin: 1em;
 }
 .inst_img_item img{
-    width: 100%;
-    
+    width: 100%;    
     border-radius: 3%;
 }
+
+/* SECCION NOTICIAS */
+
+.section_noticias{
+    padding: 4em 0 4em 0;    
+}
+.section_noticias h2{
+    text-align: center;
+}
+/* .section_noticias .not_item{
+    padding: 2em 0 2em 0;
+    gap: 1.6em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);      
+} */
+
+.noticia1{  
+    grid-area: noticia1;    
+}
+
+.noticia2{
+    grid-area: noticia2;    
+}
+
+.noticia3{
+    grid-area: noticia3;
+}
+.noticia4{
+    grid-area: noticia4;
+}
+.noticia5{
+    grid-area: noticia5;
+}
+.noticia6{
+    grid-area: noticia6;
+}
+
+.not_item{
+    display: grid;
+    grid-template-areas: "noticia1    noticia2  noticia3"
+                         "noticia4      noticia5    noticia6";
+
+    grid-gap: 1.6em;
+    gap: 1.6em;
+    padding: 2em 0 2em 0;
+}
+.not_item img{
+    width: 100%;
+    border-radius: 3%;
+    margin-top: 2em;
+}
+.not_item h3, .not_item p{
+    padding: 0.5em;
+    margin: 0;
+}
+
+.not_item p{
+    font-size: 0.8em;
+    margin: 0;
+}
+.not_item a{
+    font-weight: bold;
+    color: black;
+}
+
+
 
 
 
@@ -404,9 +483,9 @@ footer ul, footer a{
     }
 
     .objetivo{  
-        padding: 0;
+        padding: 0 0 4em 0;
         margin: 0; 
-    }
+    }   
 
     .section_inst p{
         font-size: 0.8em;
@@ -424,6 +503,28 @@ footer ul, footer a{
         width: 100%;
         margin: 2em 0 0 0;
     }
+
+    /* seccion noticias */
+
+    .section_noticias{
+        padding-top: 0;
+    }
+
+    .not_item{
+        grid-template-areas: "noticia1 noticia1 noticia1"
+                            "noticia2 noticia2 noticia2"
+                            "noticia3 noticia3 noticia3"
+                            "noticia4 noticia4 noticia4"
+                            "noticia5 noticia5 noticia5"
+                            "noticia6 noticia6 noticia6";
+    }
+
+    .not_item .noticia1 img{
+        margin-top: 0;
+    }
+
+
+    
         
 
     
@@ -433,8 +534,4 @@ footer ul, footer a{
 }
 
 /* Pendientes:
-1. ¿Como centrar la lista de navegación del footer, que quede alineada a la izquierda junto al subtitulo
-navegación?
-2. No funciona el stiky debajo de la imagen del nav hacia abajo PORQUEEEEEEEE - MIERDAAAA?
-3. El responsive del footer lo quiero hacer con grid area, o lo q salga. XD
-4. Armar el main.
+1. 
