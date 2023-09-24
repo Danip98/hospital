@@ -147,6 +147,7 @@ hr {
     z-index: 50;
     transform: translateX(-100%);
     transition: transform 0.3s;
+    
 }
 
 .dropdown hr {
