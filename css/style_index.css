@@ -98,6 +98,7 @@ hr {
 
 .nav ul li a {
     font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #152C40;
     text-decoration: none;

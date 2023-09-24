@@ -86,14 +86,39 @@ h1{
 
 .nav ul li a {
     font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: black;
+    color: #152C40;
     text-decoration: none;
     transition: color 0.3s;
+    /* estilo para subrayado animado */
+    position: relative;
+}
+/* Estilo para subrayado animado */
+.nav ul li a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #03ADC6;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform 0.5s ease-in-out;
+}
+.nav ul li a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/* Agregado margin boton al enlace de intranet por algun motivo no quedaba alineado el subrayado animado */
+.nav ul li .intranet{
+    margin-bottom: 1rem;
 }
 
 .nav ul li a:hover {
-    color: #03ADC6;
+    color: #03ADC6;   
 }
 
 /* Estilos para el menú desplegable */
