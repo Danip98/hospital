@@ -254,10 +254,10 @@ a{
 
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 950px) {
-    .imagenhospi {
+    /* .imagenhospi {
         width: 50%;
         height: auto;
-    }
+    } */
 
 }
 
@@ -304,10 +304,31 @@ a{
         background-color: #03ADC6;
     }
 
-    .imagenhospi {
+    /* footer */
+    .footer {
+        padding-left:3em ;               
+        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"   
+                            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";           
+    }
+
+    .pie_pag-col1{
+        padding-left: 0;
+    }
+    .pie_pag-col4{       
+        margin-right: 0;
+    }
+    .pie_pag-col2, .pie_pag-col4{
+        margin-right: 3em;
+    }
+
+    .pie_pag-col4 .registrarse input{
+        width: 100px;
+    }
+
+    /* .imagenhospi {
         width: 50%;
         height: auto;
-    }
+    } */
 }
 
 
