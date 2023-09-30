@@ -11,6 +11,9 @@ h1 {
     font-size: 1.7em;
     color: #152C40;
 }
+a{
+    text-decoration: none;
+}
 
 .nav {
     display: flex;
