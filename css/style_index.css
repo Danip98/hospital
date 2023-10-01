@@ -296,9 +296,10 @@ hr {
 .section_valores {
     grid-column: 1 / span 5;
     display: flex;
-    gap: 1em;
+    /* gap: 1em; */
     padding-top: 2em;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section_valores .val_item {
@@ -617,8 +618,7 @@ footer h4{
 
     /* seccion valores */
     .section_valores {
-        gap: 0.5em;
-        padding-top: 0.4em;
+       padding-top: 0.4em;
     }
 
     .section_valores .val_item img {
