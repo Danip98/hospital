@@ -1,3 +1,0 @@
-esta carpeta seria la que tengo que vincular 
-con el git para subirle los cambios y antes de hacerlo 
-hay que eliminar esta carpeta
