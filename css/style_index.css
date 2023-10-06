@@ -106,8 +106,9 @@ hr {
     /* estilo para subrayado animado */
     position: relative;
 }
+
 /* Estilo para subrayado animado */
-.nav ul li a:after{
+.nav ul li a:after {
     content: "";
     position: absolute;
     right: 0;
@@ -120,17 +121,19 @@ hr {
     transform: scalex(0);
     transition: transform 0.5s ease-in-out;
 }
-.nav ul li a:hover:after{
+
+.nav ul li a:hover:after {
     transform-origin: left;
     transform: scaleX(1);
 }
+
 /* Agregado margin boton al enlace de intranet por algun motivo no quedaba alineado el subrayado animado */
-.nav ul li .intranet{
+.nav ul li .intranet {
     margin-bottom: 1rem;
 }
 
 .nav ul li a:hover {
-    color: #03ADC6;   
+    color: #03ADC6;
 }
 
 /* Estilos para el menú desplegable */
@@ -148,7 +151,7 @@ hr {
     z-index: 50;
     transform: translateX(-100%);
     transition: transform 0.3s;
-    
+
 }
 
 .dropdown hr {
@@ -347,8 +350,8 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "section_inst          section_inst       section_inst"
-                         "section_noticias      section_noticias   section_noticias"
-                         
+        "section_noticias      section_noticias   section_noticias"
+
 
 }
 
@@ -456,14 +459,17 @@ funcionaba aplicando el estilo a todas juntas */
     border: 6px solid #04BFBF;
     transition: 3s;
 }
+
 .noticia4:hover {
     border: 6px solid #04BFBF;
     transition: 3s;
 }
+
 .noticia5:hover {
     border: 6px solid #04BFBF;
     transition: 3s;
 }
+
 .noticia6:hover {
     border: 6px solid #04BFBF;
     transition: 3s;
@@ -501,37 +507,41 @@ funcionaba aplicando el estilo a todas juntas */
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 /* grid area del footer-columnas */
-.pie_pag-col1{
+.pie_pag-col1 {
     grid-area: pie_pag-col1;
     padding-left: 4em;
 }
-.pie_pag-col2{
+
+.pie_pag-col2 {
     grid-area: pie_pag-col2;
-    
+
 }
-.pie_pag-col3{
-    grid-area: pie_pag-col3;    
+
+.pie_pag-col3 {
+    grid-area: pie_pag-col3;
 }
-.pie_pag-col4{
+
+.pie_pag-col4 {
     grid-area: pie_pag-col4;
     margin-right: 5em;
 }
+
 .footer {
     background-color: #03adc6;
     padding: 2em 0 3em 0;
-    display: grid;    
+    display: grid;
     width: 100%;
-    padding:2em auto;  
-    gap: 1.6em;    
-    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";    
+    padding: 2em auto;
+    gap: 1.6em;
+    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";
 }
 
 footer p {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
-    color:#0b1721;
+    color: #0b1721;
     font-size: 0.9em;
-    
+
 }
 
 .contacto {
@@ -545,30 +555,33 @@ footer p {
     padding-left: 0%;
     margin: 0%;
     font-family: 'Open Sans', sans-serif;
-    color:#0b1721;
+    color: #0b1721;
     font-size: 0.9em;
     margin-top: 0.6em;
     font-weight: lighter;
 }
-footer h4{
-    
-    color:#0b1721;
+
+footer h4 {
+
+    color: #0b1721;
     font-size: 1em;
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;
     text-decoration: underline;
 }
 
 .pie_pag-col2 a,
-.pie_pag-col2 li{
-    
-    margin-bottom: 0.5em;    
+.pie_pag-col2 li {
+
+    margin-bottom: 0.5em;
 }
 
 /* estilos de registrase */
-.registrarse h4, .registrarse input{
-    margin-bottom: 1em;   
+.registrarse h4,
+.registrarse input {
+    margin-bottom: 1em;
 }
-.registrarse button{
+
+.registrarse button {
     border-radius: 2%;
 }
 
@@ -618,7 +631,7 @@ footer h4{
 
     /* seccion valores */
     .section_valores {
-       padding-top: 0.4em;
+        padding-top: 0.4em;
     }
 
     .section_valores .val_item img {
@@ -684,22 +697,25 @@ footer h4{
 
     /* footer */
     .footer {
-        padding-left:3em ;               
-        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"   
-                            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";           
+        padding-left: 3em;
+        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"
+            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";
     }
 
-    .pie_pag-col1{
+    .pie_pag-col1 {
         padding-left: 0;
     }
-    .pie_pag-col4{       
+
+    .pie_pag-col4 {
         margin-right: 0;
     }
-    .pie_pag-col2, .pie_pag-col4{
+
+    .pie_pag-col2,
+    .pie_pag-col4 {
         margin-right: 3em;
     }
 
-    .pie_pag-col4 .registrarse input{
+    .pie_pag-col4 .registrarse input {
         width: 100px;
     }
 

@@ -1,5 +1,9 @@
 /* font-family: 'Merriweather', serif;-----Fuente para titulos y subtitulos*/
 /* font-family: 'Open Sans', sans-serif;-----Fuente para párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
 .colores {
     color: #F2F2F2;
     color: #152C40;
@@ -284,8 +288,135 @@ h2{
 }
 
 form{
+    font-size: 15px;
     margin: 7px;
     padding-bottom: 30px;
+    border-radius: 10px;
+    background-color:  #e6f8f8;
+    box-sizing: 40px;
+}
+
+fieldset{
+    color: rgb(33, 135, 157);
+    padding: 20px;
+    border-radius: 5px;
+    border-color: rgb(39, 160, 187);
+    
+}
+
+input{
+    position: relative;
+    margin: 2px;
+    padding: 10px;
+    color: #515457;
+    border: 100px /*rgb(51, 38, 38);*/
+}
+
+input:focus{
+    border: #03adc6;
+}
+
+
+.formCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.form{
+    background-color: white;
+    width: 600px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+/* Estilo de los inputs*/
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+/* placeholder text (a)*/
+::placeholder {
+    color: transparent;
+}
+
+/* Styling text labels */
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #93969d;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px;
+    border: none;
+    background-color: #06ADBF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.submitBtn:hover {
+    background-color: #04BFBF;
+    transform: translateY(-2px);
+}
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(33, 135, 157);
+}
+
+.input:focus {
+    border: 2px solid  rgb(33, 135, 157);
+}
+
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .mapa{

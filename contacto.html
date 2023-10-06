@@ -41,7 +41,8 @@
         <li><a href="index.html#noticias">Noticias</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a a class="intranet" href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/" target="_blank">Intranet</a>
+        <li><a a class="intranet" href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/"
+            target="_blank">Intranet</a>
         </li>
 
       </ul>
@@ -56,11 +57,12 @@
       <hr>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-          <li><a href="institucional.html">Institucional</a></li>
-          <li><a href="index.html#noticias">Noticias</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/" target="_blank">Intranet</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a href="index.html#noticias">Noticias</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/" target="_blank">Intranet</a>
+        </li>
       </ul>
       <hr>
       <div class="button-container">
@@ -92,71 +94,94 @@
     <p>Email: contacto@email.com</p>
   </section>-->
 
-  <section class="formCont">
+  <div class="formCont">
     <h2>Formulario de Contacto</h2>
-    <form>
-      <fieldset>
-        <legend>Datos Personales</legend>
+    <hr />
+    <form class="form">
+      <fieldset class="borde">
+        <h3>Datos Personales</h3>
 
         <!-- Nombre -->
-        <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+        <div class="inputContainer">
+          <input class="input" type="text" name="nombre" id="nombre" placeholder="a">
+          <label class="label" for="nombre">Nombre: </label>
+        </div>
 
         <!-- Apellido -->
-        <br>
-        <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" id="apellido" size="10" maxlength="5" required>
+        <div class="inputContainer">
+          <br>
+          <input class="input" type="text" name="apellido" id="apellido" size="10" maxlength="5" required placeholder="a">
+          <label class="label" for="apellido">Apellido: </label>
+        </div>
 
         <!-- DNI -->
-        <br>
-        <label for="dni">DNI: </label>
-        <input type="number" name="dni" id="dni">
+        <div class="inputContainer">
+          <br>
+          <input class="input" type="number" name="dni" id="dni" placeholder="a">
+          <label class="label" for="dni">DNI: </label>
+          
+        </div>
 
         <!-- Nro de Trámite -->
-        <br>
-        <label for="nro_tramite">Número de Trámite: </label>
-        <input type="password">
-
+        <div class="inputContainer">
+          <br>
+          <input class="input" type="password" name="nro_tramite" id="nro_tramite" placeholder="a">
+          <label class="label" for="nro_tramite">Número de Trámite: </label>
+          
+        </div>
 
         <!-- Hijos -->
-        <br>
-        <label for="hijos">Nro de Hijos (0 a 10): </label>
-        <input type="number" min="0" max="10">
+        <div class="inputContainer">
+          <br>
+          <input class="input" type="number" min="0" max="10" name="hijos" id="hijos" placeholder="a">
+          <label class="label" for="hijos">Nro de Hijos (0 a 10): </label>
+          
+        </div>
 
-        <!-- Mail -->
-        <br>
-        <label for="mail">Mail: </label>
-        <input type="email">
-
+        <div class="inputContainer">
+          <!-- Mail -->
+          <br>
+          <input class="input" type="email" placeholder="a">
+          <label class="label" for="mail">Mail: </label>
+          
+        </div>
 
         <!-- Fecha de Nacimiento -->
-        <br>
-        <label for="fecnac">Fecha de Nacimiento: </label>
-        <input type="date" min="2023-01-01">
+        <div class="inputContainer">
+          <br>
+          <input class="input" type="date" min="2023-01-01" name="fecnac" id="fecnac" placeholder="a">
+          <label class="label" for="fecnac">Fecha de Nacimiento: </label>
+        </div>
 
         <!-- Adjuntar archivos -->
-        <br>
-        <label for="archivo">Adjuntar archivo: </label>
-        <input type="file">
+
+        <div class="inputContainer">
+          <br>
+          <label class="label" for="archivo">Adjuntar archivo: </label>
+          <input class="input" type="file">
+        </div>
 
         <!-- Comentarios -->
-        <label for="comentarios">Deje aquí sus comentarios: </label>
-        <br>
-        <textarea name="comentarios" id="comentarios" cols="40" rows="10"></textarea>
+        <div class="inputContainer">
+          <input class="input" name="comentarios" id="comentarios" placeholder="a">
+          <label class="label" for="comentarios">Deje aquí sus comentarios: </label>
+          
+        </div>
 
         <br><br>
         <!-- Botones -->
-        <input type="submit" value="Enviar formulario">
-        <input type="reset" value="Borrar">
-
-
+        <div class="btn">
+          <input class="submitBtn" type="submit" value="Enviar formulario">
+          <input class="submitBtn" type="reset" value="Borrar">
+        </div>
 
     </form>
     </fieldset>
-  </section>
+  </div>
 
   <div class="mapa">
     <h2>Ubicacion</h2>
+    <hr />
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6710990.874697449!2d-66.78976069999997!3d-34.7845258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32cc104c52ee3%3A0x6e850ceb78e6eba5!2sHospital%20Dr.%20Arturo%20O%C3%B1ativia!5e0!3m2!1ses-419!2sar!4v1694471727748!5m2!1ses-419!2sar"
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -168,7 +193,7 @@
 
 
   <!--****** FOOTER - COPIAR A PARTIR DE AQUÍ *******-->
-  <footer class="footer">     
+  <footer class="footer">
     <div class="pie_pag-col1">
       <!-- Redes sociales -->
       <div class="redes_group">
@@ -194,20 +219,30 @@
       </div>
     </div>
     <!-- Columna 2-->
-    <div class="pie_pag-col2"> 
+    <div class="pie_pag-col2">
       <div class="navegacion">
         <h4>Navegación</h4>
         <ul>
-          <a href="index.html"><li>Inicio</a></li>
-          <a href="institucional.html"><li>Institucional</a></li>
-          <a href="index.html#noticias"><li>Noticias</a></li>
-          <a href="contacto.html"><li>Contacto</a></li>
-          <a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes"><li>Intranet</a></li>
+          <a href="index.html">
+            <li>Inicio
+          </a></li>
+          <a href="institucional.html">
+            <li>Institucional
+          </a></li>
+          <a href="index.html#noticias">
+            <li>Noticias
+          </a></li>
+          <a href="contacto.html">
+            <li>Contacto
+          </a></li>
+          <a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes">
+            <li>Intranet
+          </a></li>
         </ul>
-      </div>        
+      </div>
     </div>
     <!-- Columna 3-->
-    <div class="pie_pag-col3">        
+    <div class="pie_pag-col3">
       <div>
         <h4>Podría interesarte:</h4>
       </div>
@@ -250,8 +285,8 @@
         <div><button type="submit" value="Registrarse">Registrarse</button></div>
       </div>
     </div>
-  </div>
-</footer>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 
