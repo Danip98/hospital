@@ -541,13 +541,10 @@ footer p {
     font-family: 'Open Sans', sans-serif;
     color: #0b1721;
     font-size: 0.9em;
-
 }
-
 .contacto {
     margin-top: 2em;
 }
-
 .footer ul,
 .footer a h5,
 .pie_pag-col2 a {
@@ -567,6 +564,14 @@ footer h4 {
     font-size: 1em;
     font-family: 'Merriweather', serif;
     text-decoration: underline;
+}
+
+.footer a:hover{
+    color: #dbe6e6;
+}
+
+.footer a h5:hover{
+    color: #dbe6e6;
 }
 
 .pie_pag-col2 a,
