@@ -388,3 +388,11 @@ footer h4{
 .registrarse button{
     border-radius: 2%;
 }
+
+/* Estilos Redes sociales */
+.redes_container{
+    display: flex;
+}
+.redes_item{
+    width: 25%;
+}
