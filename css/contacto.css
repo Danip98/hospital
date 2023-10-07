@@ -431,43 +431,44 @@ h3{
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 /* grid area del footer-columnas */
-.pie_pag-col1{
+.pie_pag-col1 {
     grid-area: pie_pag-col1;
     padding-left: 4em;
 }
-.pie_pag-col2{
+
+.pie_pag-col2 {
     grid-area: pie_pag-col2;
-    
+
 }
-.pie_pag-col3{
-    grid-area: pie_pag-col3;    
+
+.pie_pag-col3 {
+    grid-area: pie_pag-col3;
 }
-.pie_pag-col4{
+
+.pie_pag-col4 {
     grid-area: pie_pag-col4;
     margin-right: 5em;
 }
+
 .footer {
     background-color: #03adc6;
     padding: 2em 0 3em 0;
-    display: grid;    
+    display: grid;
     width: 100%;
-    padding:2em auto;  
-    gap: 1.6em;    
-    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";    
+    padding: 2em auto;
+    gap: 1.6em;
+    grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";
 }
 
 footer p {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
-    color:#0b1721;
+    color: #0b1721;
     font-size: 0.9em;
-    
 }
-
 .contacto {
     margin-top: 2em;
 }
-
 .footer ul,
 .footer a h5,
 .pie_pag-col2 a {
@@ -475,30 +476,41 @@ footer p {
     padding-left: 0%;
     margin: 0%;
     font-family: 'Open Sans', sans-serif;
-    color:#0b1721;
+    color: #0b1721;
     font-size: 0.9em;
     margin-top: 0.6em;
     font-weight: lighter;
 }
-footer h4{
-    
-    color:#0b1721;
+
+footer h4 {
+
+    color: #0b1721;
     font-size: 1em;
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;
     text-decoration: underline;
 }
 
+.footer a:hover{
+    color: #dbe6e6;
+}
+
+.footer a h5:hover{
+    color: #dbe6e6;
+}
+
 .pie_pag-col2 a,
-.pie_pag-col2 li{
-    
-    margin-bottom: 0.5em;    
+.pie_pag-col2 li {
+
+    margin-bottom: 0.5em;
 }
 
 /* estilos de registrase */
-.registrarse h4, .registrarse input{
-    margin-bottom: 1em;   
+.registrarse h4,
+.registrarse input {
+    margin-bottom: 1em;
 }
-.registrarse button{
+
+.registrarse button {
     border-radius: 2%;
 }
 
