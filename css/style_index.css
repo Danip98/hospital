@@ -585,6 +585,14 @@ footer h4 {
     border-radius: 2%;
 }
 
+/* Estilos Redes sociales */
+.redes_container{
+    display: flex;
+}
+.redes_item{
+    width: 25%;
+}
+
 
 /* ESTILOS PANTALLAS PEQUEÑAS */
 @media screen and (max-width: 768px) {
