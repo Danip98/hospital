@@ -120,11 +120,11 @@
 
           </div>
 
+          <!-- Mail  -->
           <div class="inputContainer">
-            <!-- Mail -->
             <br>
-            <input class="input" type="email" placeholder="a">
-            <label class="label" for="mail">Correo Electrónico: </label>
+            <input class="input" type="email" name="email" id="email" autocomplete="off" placeholder="a"/>
+            <label class="label" for="email"> Correo Electrónico: </label>
 
           </div>
 
@@ -140,7 +140,7 @@
           <div class="inputContainer">
             <br>
             <label class="label" for="archivo">Adjuntar archivo: </label>
-            <input class="input" type="file">
+            <input class="input file" type="file" name="archivo_adjunto" id="archivo">
           </div>
 
           <!-- Comentarios -->
@@ -278,7 +278,8 @@
     </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="Javascript.js/validaciones.js"></script>
 </body>
 
 </html>
