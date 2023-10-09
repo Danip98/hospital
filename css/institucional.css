@@ -224,7 +224,7 @@ a {
     width: 100%;
     background-color: #03ADC6;
     border-radius: 15px 15px 0 0;
-    color: white;
+    color: #152C40;
     text-shadow: 0 0 10px #fff8;
 }
 
@@ -269,8 +269,15 @@ a {
 
 /* Inicia el MAIN */
 
+h2{
+    height: 2.5rem;
+}
 
-
+p{
+    display: flex;
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 2rem;
+}
 
 
 
