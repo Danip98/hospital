@@ -233,12 +233,9 @@ a {
     width: 100%;
     background-color: #03ADC6;
     border-radius: 15px 15px 0 0;
-    color: #152C40;
+    color: white;
     text-shadow: 0 0 10px #fff8;
 }
-
-/*.titulo:hover {}*/
-
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
@@ -246,7 +243,6 @@ a {
     margin-bottom: 10px;
     width: 50%;
     border-radius: 15px;
-
 }
 
 
@@ -415,10 +411,17 @@ input{
 }
 
 .mapa{
-    margin: 15px;
+    margin: 0 auto;
+    padding-top: 2em;
     padding-bottom: 40px;
     overflow: hidden;
     position: relative;
+    width: 63%;
+}
+
+.mapa iframe{
+    width: 100%;
+    border-radius: 2%;
 }
 
 
