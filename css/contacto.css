@@ -15,7 +15,8 @@
 
 body {
     margin-right: 10px;
-    margin: 0%; /*le agregué para que quede al borde y no se vean espacios en blanco en el footer. -Dani*/
+    margin: 0%;
+    /*le agregué para que quede al borde y no se vean espacios en blanco en el footer. -Dani*/
     background-color: #f2f2f2;
     font-family: 'Merriweather', serif;
     align-items: center;
@@ -23,10 +24,11 @@ body {
 
 /* Estilos para la barra de navegación principal */
 
-h1{
+h1 {
     font-size: 1.7em;
     color: #152C40;
 }
+
 a {
     text-decoration: none;
     color: #152C40;
@@ -99,8 +101,9 @@ a {
     /* estilo para subrayado animado */
     position: relative;
 }
+
 /* Estilo para subrayado animado */
-.nav ul li a:after{
+.nav ul li a:after {
     content: "";
     position: absolute;
     right: 0;
@@ -113,17 +116,19 @@ a {
     transform: scalex(0);
     transition: transform 0.5s ease-in-out;
 }
-.nav ul li a:hover:after{
+
+.nav ul li a:hover:after {
     transform-origin: left;
     transform: scaleX(1);
 }
+
 /* Agregado margin boton al enlace de intranet por algun motivo no quedaba alineado el subrayado animado */
-.nav ul li .intranet{
+.nav ul li .intranet {
     margin-bottom: 1rem;
 }
 
 .nav ul li a:hover {
-    color: #03ADC6;   
+    color: #03ADC6;
 }
 
 /* Estilos para el menú desplegable */
@@ -236,6 +241,7 @@ a {
     color: white;
     text-shadow: 0 0 10px #fff8;
 }
+
 .titulo2 {
     margin-left: 25%;
     font-size: 14px;
@@ -252,10 +258,7 @@ a {
     max-width: 90%;
     text-decoration: none;
     text-shadow: 0 0 10px #fff8;
-
 }
-
-
 
 .contenedor-imagenhospi {
     display: flex;
@@ -271,26 +274,23 @@ a {
     height: auto;
 }
 
-
-
-
-
-
 /* INICIA EL MAIN */
 
-h2{
-    height: 2.5rem;
+h2 {
+    font-size: 1.7em;
+    color: #03ADC6;
+    text-align: center;
 }
 
-h3{
+/* h3 {
     text-align: center;
     font-size: 1.1rem;
     margin-top: 5px;
     margin-bottom: 25px;
     color: #06ADBF;
-}
+} */
 
-input{
+input {
     position: relative;
     margin: 2px;
     padding: 10px;
@@ -298,21 +298,21 @@ input{
     border: 100px;
 }
 
-.borde{
+.borde {
     color: #04BFBF;
     padding: 20px;
     border-radius: 5px;
     border-color: #13d0e6;
-    
+
 }
 
-.formCont{
+.formCont {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form{
+.form {
     background-color: white;
     width: 600px;
     border-radius: 8px;
@@ -344,7 +344,8 @@ input{
     z-index: 1;
 }
 
-.file{/*Falta editar*/
+.file {
+    /*Falta editar*/
     font-size: 15px;
 }
 
@@ -367,7 +368,8 @@ input{
     z-index: 0;
 }
 
-.btn{ /* Falta Editar */
+.btn {
+    /* Falta Editar */
     display: flex;
 }
 
@@ -389,7 +391,7 @@ input{
     transform: translateY(-2px);
 }
 
-.input:focus + .label {
+.input:focus+.label {
     top: -7px;
     left: 3px;
     z-index: 10;
@@ -402,7 +404,7 @@ input{
     border: 2px solid #04BFBF;
 }
 
-.input:not(:placeholder-shown)+ .label {
+.input:not(:placeholder-shown)+.label {
     top: -7px;
     left: 3px;
     z-index: 10;
@@ -410,16 +412,22 @@ input{
     font-weight: 600;
 }
 
-.mapa{
+/* Estilos del mapa/ubicación */
+
+.mapa {
     margin: 0 auto;
-    padding-top: 2em;
+    padding-top: 6em;
     padding-bottom: 40px;
     overflow: hidden;
     position: relative;
     width: 63%;
 }
 
-.mapa iframe{
+.mapa_item h2{
+    color:#152C40;
+}
+
+.mapa iframe {
     width: 100%;
     border-radius: 2%;
 }
@@ -463,9 +471,11 @@ footer p {
     color: #0b1721;
     font-size: 0.9em;
 }
+
 .contacto {
     margin-top: 2em;
 }
+
 .footer ul,
 .footer a h5,
 .pie_pag-col2 a {
@@ -487,11 +497,11 @@ footer h4 {
     text-decoration: underline;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #dbe6e6;
 }
 
-.footer a h5:hover{
+.footer a h5:hover {
     color: #dbe6e6;
 }
 
@@ -512,10 +522,11 @@ footer h4 {
 }
 
 /* Estilos Redes sociales */
-.redes_container{
+.redes_container {
     display: flex;
 }
-.redes_item{
+
+.redes_item {
     width: 25%;
 }
 
@@ -565,24 +576,33 @@ footer h4 {
         font-size: 0.6rem;
         background-color: #03ADC6;
     }
-    /* footer */
-    .footer {
-        padding-left:3em ;               
-        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"   
-                            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";           
+
+    /* Mapa/ubicacion */
+    .mapa{
+        width: 90%;
     }
 
-    .pie_pag-col1{
+    /* footer */
+    .footer {
+        padding-left: 3em;
+        grid-template-areas: "pie_pag-col1  pie_pag-col1   pie_pag-col2     pie_pag-col2"
+            "pie_pag-col3   pie_pag-col3    pie_pag-col4    pie_pag-col4";
+    }
+
+    .pie_pag-col1 {
         padding-left: 0;
     }
-    .pie_pag-col4{       
+
+    .pie_pag-col4 {
         margin-right: 0;
     }
-    .pie_pag-col2, .pie_pag-col4{
+
+    .pie_pag-col2,
+    .pie_pag-col4 {
         margin-right: 3em;
     }
 
-    .pie_pag-col4 .registrarse input{
+    .pie_pag-col4 .registrarse input {
         width: 100px;
     }
 
@@ -613,8 +633,13 @@ footer h4 {
 
 /* ------- Mediaqueries -----------*/
 @media screen and (max-width: 800px) {
+    .formCont{
+        width: 90%;
+        margin: 0 auto;
+    }
     .formulario {
         grid-template-columns: 1fr;
+        
     }
 
     .formulario__grupo-terminos,
@@ -623,7 +648,7 @@ footer h4 {
         grid-column: span 1;
     }
 
-    .formulario__btn{
+    .formulario__btn {
         width: 100%;
     }
 }
