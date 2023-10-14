@@ -412,6 +412,13 @@ input {
     font-weight: 600;
 }
 
+
+.input.area {
+    width: 100%; 
+    height: 6rem; 
+}
+
+
 /* Estilos del mapa/ubicación */
 
 .mapa {
@@ -524,7 +531,7 @@ footer h4 {
 .suscripcion::placeholder {
     color:#3b3b3b;
   }
-  
+
 .registrarse button {
     border-radius: 2%;
 }
