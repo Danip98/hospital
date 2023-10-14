@@ -86,14 +86,15 @@
 
     <h2 class="titulo titulo2">Formulario de Contacto</h2>
     <div class="formCont">
-      <form class="form" action="https://formsubmit.co/your@email.com" method="POST">
+      <!--***Katia: Utilizamos una API para el backend del formulario (formsubmit.co) -->
+      <form class="form" action="https://formsubmit.co/finaltrabajo4@gmail.com" method="POST">
         <fieldset class="borde">
-          <h3>Datos Personales</h3>
+          <h3>Contactanos</h3>
 
           <!-- Nombre -->
           <div class="inputContainer">
-            <input class="input" type="text" name="nombre" id="nombre" placeholder="a">
-            <label class="label" for="nombre">Nombre: </label>
+            <input class="input" type="text" name="name" id="name" placeholder="a" required>
+            <label class="label" for="name">Nombre: </label>
           </div>
 
           <!-- Apellido -->
@@ -104,48 +105,56 @@
             <label class="label" for="apellido">Apellido: </label>
           </div>
 
-          <!-- DNI -->
+          <!-- Teléfono -->
           <div class="inputContainer">
+            <br>
+            <input class="input" type="tel" name="phone" id="phone" placeholder="a" required>
+            <label class="label" for="phone">Teléfono: </label>
+
+          </div>
+
+          <!-- DNI -->
+          <!-- <div class="inputContainer">
             <br>
             <input class="input" type="number" name="dni" id="dni" placeholder="a">
             <label class="label" for="dni">DNI: </label>
 
-          </div>
+          </div> -->
 
           <!-- Hijos -->
-          <div class="inputContainer">
+          <!-- <div class="inputContainer">
             <br>
             <input class="input" type="number" min="0" max="10" name="hijos" id="hijos" placeholder="a">
             <label class="label" for="hijos">Nro de Hijos (0 a 10): </label>
 
-          </div>
+          </div> -->
 
           <!-- Mail  -->
           <div class="inputContainer">
             <br>
-            <input class="input" type="email" name="email" id="email" autocomplete="off" placeholder="a"/>
+            <input class="input" type="email" name="email" id="email" autocomplete="off" placeholder="a" required>
             <label class="label" for="email"> Correo Electrónico: </label>
 
           </div>
 
           <!-- Fecha de Nacimiento -->
-          <div class="inputContainer">
+          <!-- <div class="inputContainer">
             <br>
             <input class="input" type="date" min="2023-01-01" name="fecnac" id="fecnac" placeholder="a">
             <label class="label" for="fecnac">Fecha de Nacimiento: </label>
-          </div>
+          </div> -->
 
           <!-- Adjuntar archivos -->
 
-          <div class="inputContainer">
+          <!-- <div class="inputContainer">
             <br>
             <label class="label" for="archivo">Adjuntar archivo: </label>
             <input class="input file" type="file" name="archivo_adjunto" id="archivo">
-          </div>
+          </div> -->
 
           <!-- Comentarios -->
           <div class="inputContainer">
-            <textarea class="input area" name="comentarios" id="comentarios" placeholder="a"></textarea>
+            <textarea class="input area" name="message" id="message" placeholder="a"></textarea>
             <label class="label" for="comentarios">Deje aquí sus comentarios: </label>
 
           </div>
@@ -156,6 +165,9 @@
             <input class="submitBtn" type="submit" value="Enviar formulario">
             <input class="submitBtn" type="reset" value="Borrar">
           </div>
+          <!--***Katia:  Agregamos redireccionamiento a la pagina del formulario una vez que se envie el mensaje*** -->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5502/contacto.html">
+          <input type="hidden" name="_captcha" value="false">
 
       </form>
       </fieldset>
