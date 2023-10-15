@@ -9,6 +9,7 @@ var footer = `
     <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA==" target="_blank"><i
         class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
   </div>
+  
 </div>
 <!-- Cierra Redes sociales -->
 <div class="contacto">
@@ -53,12 +54,12 @@ var footer = `
         <h5>Historia del hospital</h5>
       </a>
     </li>
-    <li><a href="">
+    <li><a href="https://www.instagram.com/p/Cn7Eg5pOVLe/" target="_blank">
         <h5>Donar sangre</h5>
       </a>
     </li>
     <li>
-      <a href="">
+      <a href="./contacto.html#ubicacion">
         <h5>Ubicación del hospital</h5>
       </a>
     </li>
