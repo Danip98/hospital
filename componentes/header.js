@@ -53,4 +53,4 @@ var header = `
 <img class="imagenhospi" src="img/img_index/hospital4.jpg" alt="" />
 </div>
 `
-document.querySelector('header').innerHTML=header
+document.querySelector('header').innerHTML= header
