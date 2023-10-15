@@ -370,7 +370,6 @@ hr {
     background-color: #03adc6;
     padding: 2em 0 3em 0;
     display: grid;
-    width: 100%;
     padding: 2em auto;
     gap: 1.6em;
     grid-template-areas: "pie_pag-col1   pie_pag-col2   pie_pag-col3    pie_pag-col4";
