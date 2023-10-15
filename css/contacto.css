@@ -527,13 +527,14 @@ footer h4 {
 
 .suscripcion {
     border-radius: 5px;
+    padding: 10px;
 }
 .suscripcion::placeholder {
     color:#3b3b3b;
   }
 
 .registrarse button {
-    border-radius: 2%;
+    border-radius: 5px;
 }
 
 /* Estilos Redes sociales */
