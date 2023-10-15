@@ -1,17 +1,18 @@
 var footer = `
 <div class="pie_pag-col1">
 <!-- Redes sociales -->
-<div class="redes_group">
-  <div class="redes_sub">
+<div class="redes_sub">
     <h4>Redes sociales</h4>
   </div>
+<div class="redes_container">
+  
   <div class="redes_item">
     <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA==" target="_blank"><i
         class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
   </div>
   <div class="redes_item">
   <a href="https://www.facebook.com/hospi.onativia/" target="_blank"><i
-      class="fa-brands fa-square-facebook fa-fade fa-2xl" style="color: #f8f5f5;"></i></a>
+      class="fa-brands fa-square-facebook fa-bounce fa-2xl" style="color: #f8f5f5;"></i></a>
 </div>
   
 </div>
