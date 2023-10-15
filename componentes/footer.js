@@ -83,7 +83,7 @@ var footer = `
         <div>
           <h4>Suscribite:</h4>
         </div>
-        <div><input class="suscripcion" type="text" placeholder="Escribe tu email" /></div>
+        <div><input class="suscripcion" id="suscripcion" type="text" placeholder="Escribe tu email" /></div>
         <div><button type="submit" value="Registrarse">
         <span>Enviar</span>
         </button></div>
