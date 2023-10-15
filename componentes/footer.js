@@ -9,6 +9,10 @@ var footer = `
     <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA==" target="_blank"><i
         class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
   </div>
+  <div class="redes_item">
+  <a href="https://www.facebook.com/hospi.onativia/" target="_blank"><i
+      class="fa-brands fa-square-facebook fa-fade fa-2xl" style="color: #f8f5f5;"></i></a>
+</div>
   
 </div>
 <!-- Cierra Redes sociales -->
