@@ -302,6 +302,7 @@ p {
     display: flex;
     justify-content: center;
     margin-bottom: 8em;
+    flex-direction: column;
 
 }
 
