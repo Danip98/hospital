@@ -285,7 +285,7 @@ hr {
 
 .contenido {
     max-width: 1000px;
-    width: 90%;
+    /* width: 90%; */
     margin: 2em auto;
     gap: 1.6em;
     display: grid;
@@ -343,7 +343,7 @@ hr {
 }
 
 .contenido_2 {
-    max-width: 1000px;
+    max-width: 1400px;
     width: 85%;
     margin: 2em auto;
     gap: 1.6em;
