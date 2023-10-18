@@ -422,34 +422,44 @@ footer h4 {
 }
 
 /* estilos de registrase */
-.registrarse h4,
-.registrarse input {
+.registrarse h4 {
     margin-bottom: 1em;
     background-color: transparent;
+    color: #e6f8f8;
+    text-decoration: none;
     
 }
 
+.registrarse input {
+    background-color: #e6f8f8;
+    margin-bottom: 1em;
+
+}
+
+
 .registrarse button {
-    border: 2px solid black;
+    border: 2px solid rgb(24, 24, 24);
     border-radius: 5px;
-    background-color: transparent;
-    font-size: 1.1em;
+    background-color: #e6f8f8;
+    font-size: 0.7em;
     cursor: pointer;
+    padding: 1em;
     
 
 }
 
 .registrarse button:hover{
-    font-size: 1.3rem;
-    border: 2px solid white;
-    color: white;
+    font-size: 0.8em;
+    
+    background-color: #e6f8f8;
+   
     
 }
 
 .suscripcion {
     border-radius: 5px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(15, 15, 15);
 }
 
 .suscripcion::placeholder {
