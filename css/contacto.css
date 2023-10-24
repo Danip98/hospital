@@ -440,7 +440,19 @@ input {
     border-radius: 2%;
 }
 
-
+.error {
+    color: red;
+}
+.error-border {
+    border: 2px solid red;
+}
+.error-message {
+    background-color: #ffcccc;
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 /* grid area del footer-columnas */

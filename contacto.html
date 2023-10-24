@@ -36,45 +36,52 @@
     
     <div class="formCont">
       <!--***Katia: Utilizamos una API para el backend del formulario (formsubmit.co) -->
-      <form class="form"  action="https://formsubmit.co/finaltrabajo4@gmail.com" method="POST">
+      <form class="form"   method="POST">
         <fieldset class="borde">
           <h2>Contactanos</h2>
 
           <!-- Nombre -->
           <div class="inputContainer">
-            <input class="input" type="text" name="name" id="name" placeholder="a" autocomplete="name" required>
+            <input class="input" type="text" name="name" id="name" placeholder="a" autocomplete="name" >
             <label class="label" for="name">Nombre: </label>
+            
           </div>
+          <div id="nameError" class="error"></div>
 
           <!-- Apellido -->
           <div class="inputContainer">
             <br>
-            <input class="input" type="text" name="apellido" id="apellido" size="10" maxlength="25" placeholder="a" required
+            <input class="input" type="text" name="apellido" id="apellido" size="10" maxlength="25" placeholder="a" 
               >
             <label class="label" for="apellido">Apellido: </label>
+           
           </div>
+          <div id="apellidoError" class="error"></div>
 
           <!-- Teléfono -->
           <div class="inputContainer">
             <br>
-            <input class="input" type="tel" name="phone" id="phone"  placeholder="a" autocomplete="tel" required>
+            <input class="input" type="tel" name="phone" id="phone"  placeholder="a" autocomplete="tel" >
             <label class="label" for="phone">Teléfono: </label>
-
           </div>
+          <div id="phoneError" class="error"></div>
 
           <!-- Mail  -->
           <div class="inputContainer">
             <br>
-            <input class="input" type="email" name="email" id="email" autocomplete="off"  placeholder="a"  required>
+            <input class="input" type="email" name="email" id="email" autocomplete="off"  placeholder="a" >
             <label class="label" for="email"> Correo Electrónico: </label>
-
           </div>
+
+          <div id="emailError" class="error"></div>
           <!-- Comentarios -->
           <div class="inputContainer">
             <textarea class="input area" name="message" id="message"  placeholder="a" ></textarea>
             <label class="label" for="message">Deje aquí sus comentarios: </label>
+           
 
           </div>
+          <div id="messageError" class="error"></div>
 
           <br><br>
           <!-- Botones -->
