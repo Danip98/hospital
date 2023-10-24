@@ -36,7 +36,7 @@
     
     <div class="formCont">
       <!--***Katia: Utilizamos una API para el backend del formulario (formsubmit.co) -->
-      <form class="form"   method="POST">
+      <form class="form" action="https://formsubmit.co/finaltrabajo4@gmail.com"  method="POST">
         <fieldset class="borde">
           <h2>Contactanos</h2>
 
@@ -89,11 +89,12 @@
             <input class="submitBtn" type="submit" value="Enviar formulario">
             <input class="submitBtn" type="reset" value="Borrar">
           </div>
-          <!--***Katia:  Agregamos redireccionamiento a la pagina del formulario una vez que se envie el mensaje*** -->
-          <input type="hidden" name="_next" value="/index.html">
-          <input type="hidden" name="_captcha" value="false">
+          <!-- ***Katia:  Agregamos redireccionamiento a la pagina del formulario una vez que se envie el mensaje***
+          <input type="hidden" name="_next" value="http://127.0.0.1:5503/contacto.html">
+          <input type="hidden" name="_captcha" value="false"> -->
 
       </form>
+      <div id="successMessage" class="success-message"></div>
       </fieldset>
     </div>
 

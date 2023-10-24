@@ -69,8 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
             messageInput.classList.remove("error-border");
         }
 
-        if (!isValid) {
+       if (!isValid) {
             event.preventDefault();
+        } else {
+            // Mostrar el mensaje de éxito y ocultar el formulario
+            const successMessage = document.getElementById('successMessage');
+            successMessage.textContent = "El formulario se envió correctamente.";
+            formulario.style.display = 'none';
         }
     });
 });
