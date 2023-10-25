@@ -341,9 +341,49 @@ hr {
 .lu {
     text-decoration: none;
 }
+/* Estilos para las autoridades */
+.autoridades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.autoridad {
+    text-align: center;
+    width: 180px;
+    margin: 10px;
+}
 
+.imagen-autoridad {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 
+.nombre-autoridad {
+    margin: 0;
+    color: #152C40;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.cargo {
+    margin: 0;
+    color: #03ADC6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em; 
+}
+.titulo {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+margin-left: 10px;
+align-content: stretch;
+flex-wrap: nowrap;
+}
 
 /********* ESTILOS DEL FOOTER - COPIAR A PARTIR DE AQUÍ *************/
 /* grid area del footer-columnas */
