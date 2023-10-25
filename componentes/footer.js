@@ -7,7 +7,7 @@ var footer = `
       <div class="redes_container">
         
         <div class="redes_item">
-          <a href="https://instagram.com/hospitaloniativia?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+          <a href="https://www.instagram.com/hospitalonativia/" target="_blank"><i
               class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
         </div>
         <div class="redes_item">
