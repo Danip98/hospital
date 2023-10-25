@@ -375,7 +375,7 @@ input {
 
 .submitBtn {
     display: block;
-    margin-left: auto;
+    margin-left: 6em;
     padding: 15px;
     border: none;
     background-color: #06ADBF;
