@@ -303,12 +303,11 @@ p {
     justify-content: center;
     margin-bottom: 8em;
     flex-direction: column;
-
 }
 
 .valores ul{
     color: #152C40;
-    
+    padding-left: 0;
 }
 
 .valores ul li{
