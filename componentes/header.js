@@ -15,7 +15,7 @@ var header = `
   <li><a href="index.html#noticias">Noticias</a></li>
   <li><a href="servicios.html">Servicios</a></li>
   <li><a href="contacto.html">Contacto</a></li>
-  <li><a class="intranet" href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/" target="_blank">Intranet</a>
+  <li><a class="intranet" href="http://turnos.pythonanywhere.com" target="_blank">Intranet</a>
   </li>
 
 </ul>
@@ -34,7 +34,7 @@ var header = `
   <li><a href="index.html#noticias">Noticias</a></li>
   <li><a href="servicios.html">Servicios</a></li>
   <li><a href="contacto.html">Contacto</a></li>
-  <li><a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes/" target="_blank">Intranet</a>
+  <li><a href="http://turnos.pythonanywhere.com" target="_blank">Intranet</a>
   </li>
 </ul>
 <hr>
