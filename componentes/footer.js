@@ -25,7 +25,7 @@ var footer = `
           <p>Telf: 1126 5894 5677</p>
         </div>
         <div>
-          <p>Email: contacto@email.com</p>
+          <p>Email: contacto@hotmail.com</p>
         </div>
       </div>
       </div>
@@ -39,7 +39,8 @@ var footer = `
           <a href="index.html#noticias"><li>Noticias</a></li>
           <a href="contacto.html"><li>Contacto</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <a href="http://pacientes.pythonanywhere.com/accounts/login/?next=/pacientes"><li>Intranet</a></li>
+          <li><a class="intranet" href="http://turnos.pythonanywhere.com" target="_blank">Turnos</a>
+  </li>
         </ul>
       </div>        
       </div>
@@ -52,12 +53,6 @@ var footer = `
         <ul>
           <li>
             <a href="servicios.html">
-              <h5>¿Cómo sacar turno?</h5>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <h5>Historia del hospital</h5>
             </a>
           </li>
           <li><a href="https://www.instagram.com/p/Cn7Eg5pOVLe/" target="_blank">
