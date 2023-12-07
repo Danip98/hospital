@@ -30,5 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function mensaje() {
+    alert("Gracias por suscribirte");
+    suscripcion.reset();
+}
+
 
 
